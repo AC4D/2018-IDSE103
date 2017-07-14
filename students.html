@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link href="reboot.css" media="all" rel="stylesheet">
+    <script>
+      var students = ['Chap', 'Ruby', 'Jonathan', 'Lauren'];
+      
+      function renderStudents() {
+        studentList = document.getElementById("students");
+    
+        // clear students list
+        for (var i = 0; i < students.arrayLength; i++) {
+          newStudentItem = "<li>" + students[i] + "</li>";
+          studentList.appendChild(newStudentItem);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <ol id="students">
+    </ol>
+  </body>
+</html>
