@@ -340,6 +340,5 @@ table {
 }
 
 thead td {
-  font-weight: bold;
-  background: #eee;
+  color: #868e96;
 }
