@@ -326,4 +326,16 @@ template {
 [hidden] {
   display: none !important;
 }
-/*# sourceMappingURL=bootstrap-reboot.css.map */
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  background: #eee;
+}
