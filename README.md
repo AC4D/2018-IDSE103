@@ -1,1 +1,3 @@
-# AC4D-2018
+# AC4D IDSE103 2018
+
+[Syllabus](/syllabus.html)
