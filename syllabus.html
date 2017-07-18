@@ -21,21 +21,21 @@
     <table>
       <thead>
         <tr>
-          <td>Description</td>
+          <td></td>
           <td>Relative Weight</td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Assignment #1</td>
+          <td>Assignment #1 - Video Scenario</td>
           <td>10%</td>
         </tr>
         <tr>
-          <td>Assignment #2</td>
+          <td>Assignment #2 - Product Ideation and Rendering</td>
           <td>10%</td>
         </tr>
         <tr>
-          <td>Assignment #3</td>
+          <td>Assignment #3 - Physical Prototyping</td>
           <td>10%</td>
         </tr>
         <tr>
@@ -74,116 +74,286 @@
         list-style-type: none;
         margin: 0;
       }
+      table.schedule tr {
+        margin-bottom: 1rem;
+      }
+      table.schedule td.date {
+        width: 10%;
+      }
+      table.schedule .time {
+        width: 19%;
+        font-family: monospace;
+      }
+      table.schedule td {
+        padding: 0.25rem;
+      }
+      table.schedule tr:hover td {
+        background: #efefef;
+      }
+      table.schedule tr:hover .date {
+        background: none;
+      }
+      table.schedule tbody {
+        border-bottom: 1rem solid #fff;
+      }
     </style>
 
     <h3>Schedule</h3>
-    <table>
-      <tbody>
+    <table class="schedule">
+      <tbody id="8-16" class="session">
         <tr>
-          <td>8/26</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 9:45 a.m. Discussion: #1 Course Syllabus + <a href="lectures/1">Sketching and Storytelling</a></li>
-              <li>9:45 a.m. &ndash; 10:45 a.m. In-Class Project: Sketching App</li>
-              <li>10:45 a.m. &ndash; 12:00 p.m. Present and critique in-class project</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Chap facilitate</li>
-              <li>1:00 p.m. &ndash; 1:30 p.m. Discuss <a href="assignments/1">Assignment #1 - Video Scenario</a></li>
-              <li>1:30 p.m. &ndash; 3:00 p.m. Sketch assignment plan and review with Chap</li>
-            </ul>
+          <td rowspan="7" class="date">8/26</td>
+          <td class="time">
+            9:00 &ndash; 9:45
+          </td>
+          <td class="activity">
+            Discussion: #1 Syllabus + <a href="lectures/1">Sketching and Storytelling</a>
           </td>
         </tr>
         <tr>
-          <td>9/2</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 10:15 a.m. Review and Critique Assignment #1</li>
-              <li>10:15 a.m. &ndash; 11:00 a.m. Discussion: #2 <a href="lectures/2">Facilitating Feedback</a></li>
-              <li>11:00 a.m. &ndash; 12:00 p.m. In-Class Project: Competative product analysis</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Team #1 facilitate</li>
-              <li>1:00 p.m. &ndash; 1:30 p.m. Discuss <a href="assignemtns/2">Assignment #2 - Physical Product Sketching</a></li>
-              <li>1:30 p.m. &ndash; 3:00 p.m. Sketch assignment plan and review with Chap</li>
-            </ul>
+          <td class="time">9:45 &ndash; 10:45</td>
+          <td>In-Class Project: Sketching App</td>
+        </tr>
+        <tr>
+          <td class="time">10:45 &ndash; 12:00</td>
+          <td>Review and critique in-class project</td>
+        </tr>
+        <tr>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Chap facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 1:30</td>
+          <td>Discuss <a href="assignments/1">Assignment #1 - Video Scenario</a></td>
+        </tr>
+        <tr>
+          <td class="time">1:30 &ndash; 3:00</td>
+          <td>Sketch assignment plan and review with Chap</td>
+        </tr>
+      </tbody>
+      <tbody id="9-2" class="session">
+        <tr>
+          <td rowspan="7" class="date">9/2</td>
+          <td class="time">
+            9:00 &ndash; 10:15
+          </td>
+          <td class="activity">
+            Review and Critique Assignment #1
           </td>
         </tr>
         <tr>
-          <td>9/9</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 10:15 a.m. Review and Critique Assignment #2</li>
-              <li>10:15 a.m. &ndash; 11:00 a.m. Discussion: #3 <a href="lectures/3">Abductive Thinking</a></li>
-              <li>11:00 a.m. &ndash; 12:00 p.m. In-Class Project: Sketch 10 marketing ideas</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Team #2 facilitate</li>
-              <li>1:00 p.m. &ndash; 1:30 p.m. Discuss <a href="assignments/3">Assignment #3 - Physical Prototyping</a></li>
-              <li>1:30 p.m. &ndash; 3:00 p.m. Sketch assignment plan and review with Chap</li>
-            </ul>
+          <td class="time">10:15 &ndash; 11:00</td>
+          <td>Discussion: #2 <a href="lectures/2">Facilitating Feedback</a></td>
+        </tr>
+        <tr>
+          <td class="time">11:00 &ndash; 12:00</td>
+          <td>In-Class Project: Competative product analysis</td>
+        </tr>
+        <tr>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Team #1 facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 1:30</td>
+          <td>Discuss <a href="assignments/2">Assignment #2 - Product Ideation and Rendering</a></td>
+        </tr>
+        <tr>
+          <td class="time">1:30 &ndash; 3:00</td>
+          <td>Sketch assignment plan and review with Chap</td>
+        </tr>
+      </tbody>
+      <tbody id="9-9" class="session">
+        <tr>
+          <td rowspan="7" class="date">9/9</td>
+          <td class="time">
+            9:00 &ndash; 10:15
+          </td>
+          <td class="activity">
+            Review and Critique Assignment #2
           </td>
         </tr>
         <tr>
-          <td>9/16</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 10:15 a.m. Review and Critique Assignment #3</li>
-              <li>10:15 a.m. &ndash; 11:00 a.m. Discussion: #4 <a href="lectures/4">Self-Taught</a></li>
-              <li>11:00 a.m. &ndash; 12:00 p.m. In-Class Project: Sketch optimum job floorplan and flow</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Team #3 facilitate</li>
-              <li>1:00 p.m. &ndash; 1:30 p.m. Discuss <a href="assignemtns/4">Assignment #4 - Job Calculator</a></li>
-              <li>1:30 p.m. &ndash; 3:00 p.m. Sketch assignment plan and review with Chap</li>
-            </ul>
+          <td class="time">10:15 &ndash; 11:00</td>
+          <td>Discussion: #3 <a href="lectures/3">Abductive Thinking</a></td>
+        </tr>
+        <tr>
+          <td class="time">11:00 &ndash; 12:00</td>
+          <td>In-Class Project: Marketing Campaigns</td>
+        </tr>
+        <tr>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Team #2 facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 1:30</td>
+          <td>Discuss <a href="assignments/3">Assignment #3 - Physical Prototyping</a></td>
+        </tr>
+        <tr>
+          <td class="time">1:30 &ndash; 3:00</td>
+          <td>Sketch assignment plan and review with Chap</td>
+        </tr>
+      </tbody>
+      <tbody id="9-16" class="session">
+        <tr>
+          <td rowspan="7" class="date">9/16</td>
+          <td class="time">
+            9:00 &ndash; 10:15
+          </td>
+          <td class="activity">
+            Review and Critique Assignment #3
           </td>
         </tr>
         <tr>
-          <td>9/23</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 10:15 a.m. Review and Critique Assignment #4</li>
-              <li>10:15 a.m. &ndash; 11:00 a.m. Discussion: #5 <a href="lectures/5">Evaluating Design</a></li>
-              <li>11:00 a.m. &ndash; 12:00 p.m. In-Class Project: Sketch AR component for app</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Team #4 facilitate</li>
-              <li>1:00 p.m. &ndash; 1:30 p.m. Discuss <a href="assignments/5">Assignment #5 - Testing</a></li>
-              <li>1:30 p.m. &ndash; 3:00 p.m. Sketch assignment plan and review with Chap</li>
-            </ul>
+          <td class="time">10:15 &ndash; 11:00</td>
+          <td>Discussion: #4 <a href="lectures/4">Desiging in Public</a></td>
+        </tr>
+        <tr>
+          <td class="time">11:00 &ndash; 12:00</td>
+          <td>In-Class Project: Design optimum workspace</td>
+        </tr>
+        <tr>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Team #3 facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 1:30</td>
+          <td>Discuss <a href="assignments/4">Assignment #4 - Job Calculator</a></td>
+        </tr>
+        <tr>
+          <td class="time">1:30 &ndash; 3:00</td>
+          <td>Sketch assignment plan and review with Chap</td>
+        </tr>
+      </tbody>
+      <tbody id="9-23" class="session">
+        <tr>
+          <td rowspan="7" class="date">9/23</td>
+          <td class="time">
+            9:00 &ndash; 10:15
+          </td>
+          <td class="activity">
+            Review and Critique Assignment #4
           </td>
         </tr>
         <tr>
-          <td>9/30</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 10:15 a.m. Review and Critique Assignment #5</li>
-              <li>10:15 a.m. &ndash; 11:00 a.m. Discussion: #6 <a href="lectures/6">Pitching and Presenting</a></li>
-              <li>11:00 a.m. &ndash; 12:00 p.m. In-Class Project: Craft elevator pitch for app</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Team #5 facilitate</li>
-              <li>1:00 p.m. &ndash; 1:30 p.m. Discuss <a href="assignments/final">Final Presentation</a></li>
-              <li>1:30 p.m. &ndash; 3:00 p.m. Sketch assignment plan and review with Chap</li>
-            </ul>
+          <td class="time">10:15 &ndash; 11:00</td>
+          <td>Discussion: #5 <a href="lectures/5">Evaluating Prototypes</a></td>
+        </tr>
+        <tr>
+          <td class="time">11:00 &ndash; 12:00</td>
+          <td>In-Class Project: Sketch augmented reality mode for app</td>
+        </tr>
+        <tr>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Team #4 facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 1:30</td>
+          <td>Discuss <a href="assignments/5">Assignment #5 - User Feedback</a></td>
+        </tr>
+        <tr>
+          <td class="time">1:30 &ndash; 3:00</td>
+          <td>Sketch assignment plan and review with Chap</td>
+        </tr>
+      </tbody>
+      <tbody id="9-30" class="session">
+        <tr>
+          <td rowspan="7" class="date">9/30</td>
+          <td class="time">
+            9:00 &ndash; 10:15
+          </td>
+          <td class="activity">
+            Review and Critique Assignment #5
           </td>
         </tr>
         <tr>
-          <td>10/7</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 11:00 a.m. Present and Critique Final Presentation - Part 1</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Team #6 facilitate</li>
-              <li>1:00 p.m. &ndash; 3:00 p.m. Work on Final Presentation - Part 2</a></li>
-            </ul>
+          <td class="time">10:15 &ndash; 11:00</td>
+          <td>Discussion: #6 <a href="lectures/6">Writing as Design</a></td>
+        </tr>
+        <tr>
+          <td class="time">11:00 &ndash; 12:00</td>
+          <td>In-Class Project: Craft elevator pitch for app</td>
+        </tr>
+        <tr>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Team #5 facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 1:30</td>
+          <td>Discuss <a href="assignments/final">Final Presentation</a></td>
+        </tr>
+        <tr>
+          <td class="time">1:30 &ndash; 3:00</td>
+          <td>Sketch assignment plan and review with Chap</td>
+        </tr>
+      </tbody>
+      <tbody id="10-7" class="session">
+        <tr>
+          <td rowspan="7" class="date">10/7</td>
+          <td class="time">
+            9:00 &ndash; 11:00
+          </td>
+          <td class="activity">
+            Present and Critique Final Presentation - Part 1
           </td>
         </tr>
         <tr>
-          <td>10/14</td>
-          <td>
-            <ul>
-              <li>9:00 a.m. &ndash; 12:00 p.m. Present and Critique Final Presentation - Part 2</li>
-              <li>12:00 p.m. &ndash; 12:45 p.m. Lunch break</li>
-              <li>12:45 p.m. &ndash; 1:00 p.m. Game: Team #7 facilitate</li>
-              <li>1:00 p.m. &ndash; 3:00 p.m. Present and Critique Final Presentation - Part 2</li>
-            </ul>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Team #6 facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 3:00</td>
+          <td>Work on Final Presentation - Part 2</td>
+        </tr>
+      </tbody>
+      <tbody id="10-14" class="session">
+        <tr>
+          <td rowspan="7" class="date">10/14</td>
+          <td class="time">
+            9:00 &ndash; 12:00
           </td>
+          <td class="activity">
+            Present and Critique Final Presentation - Part 2
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:00 &ndash; 12:45</td>
+          <td>Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">12:45 &ndash; 1:00</td>
+          <td>Game: Team #7 facilitate</td>
+        </tr>
+        <tr>
+          <td class="time">1:00 &ndash; 3:00</td>
+          <td>Present and Critique Final Presentation - Part 2</td>
         </tr>
       </tbody>
     </table>
