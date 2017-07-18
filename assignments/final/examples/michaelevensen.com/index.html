@@ -1,0 +1,1419 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Michael Nino Evensen &mdash; Product Designer and Developer</title>
+  <meta name="description" content="Michael Nino Evensen">
+  <meta name="keywords" content="michael nino evensen, product design, soundcloud, mobile, iphone, native, web, design, interaction design">
+  <meta name="copyright" content="Michael Nino Evensen">
+  <meta name="author" content="Michael Nino Evensen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:image" content="media/images/facebook.png"/>
+  <meta property="og:image:secure_url" content="media/images/facebook.png" />
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.6.2.min.js.html"></script>
+</head>
+<body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+
+
+<!-- Header -->
+<header>
+
+
+
+
+<!-- Chapter -->
+  <nav class="chapter">
+
+
+    <li class="title">
+      Building SoundCloud
+    </li>
+
+    <li class="back">
+      <a href="about.html" class="grey">About me</a>
+    </li>
+
+  </nav>
+
+
+</header>
+
+
+
+
+<!--  Cover header  -->
+<div class="cover">
+
+  <!--  -->
+  <article class="introduction">
+
+    <h3>An in-depth retrospective</h3>
+    <h1 class="big">Building SoundCloud</h1>
+
+  </article>
+
+
+</div>
+
+
+
+
+
+
+<!-- Full Story -->
+<div class="story">
+
+
+  <!-- Content -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Inheriting Legacy -->
+<section class="inheriting-legacy">
+
+  <h2>Inheriting Legacy</h2>
+
+  <p>Like most mobile applications during the early days of iOS and Android, the mobile product was treated and positioned primarily as a companion application to the main product: <em>web</em>. Most features were designed and built for desktop first and later integrated into the iPhone application.</p>
+
+
+  <p>Features and functionality had been prioritised over focus and clarity, and iOS had evolved from a fairly simple foundation into an extremely comprehensive application, serving usage, well beyond what most users were doing in the product. As SoundCloud’s userbase evolved from just <em>creators</em> to <em>creators</em> and <em>listeners</em>, it became increasingly unclear who the iOS product was for. The patterns of use didn’t correlate with how the app had been designed; people were using the app in ways it wasn’t at all optimized for.</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Old SoundCloud App -->
+
+</div>
+
+<section class="app-history">
+
+  <figure>
+
+    <div class="images">
+
+      <li><img srcset="media/images/Player.png 1x, media/images/Player@2x.png 2x" alt="Player" title="Player"></li>
+      <li><img srcset="media/images/Stream.png 1x, media/images/Stream@2x.png 2x" alt="Stream" title="Stream"></li>
+      <li><img srcset="media/images/Profile.png 1x, media/images/Profile@2x.png 2x" alt="Profile" title="Profile"></li>
+
+    </div>
+
+    <figcaption>The previous SoundCloud iPhone Application.</figcaption>
+
+  </figure>
+
+
+</section>
+
+
+<div class="story">
+
+  <!-- Old SoundCloud App: END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- All about the Listener -->
+
+  <section class="all-about-the-listener">
+
+    <h2>All about The Listener</h2>
+
+    <p>Moving forward, instead of catering to the needs of both <em>creators</em> and <em>listeners</em> in a single app, we realized that making SoundCloud accessible for an increasingly mainstream listener audience was a huge undertaking given it’s creator-focused roots, unique content, and unique feature set. We had to find that one clear profile that we were primarily designing for. A solid definition of who was at the core of the product.</p>
+
+    <p>We decided to completely focus the project on listeners with the aim of building dedicated mobile creator experiences down the road. And after years of building features and functionality catering to both creators and listeners — we put the <em>listener</em> in the front seat.</p>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- Identifying the experiences -->
+
+  <section class="identifying-core-experiences">
+
+    <h2>Identifying the Experiences</h2>
+
+    <p>For every experience, feature, detail, we were asking ourselves: “Does it really need to be there?” And if so: “Why?”. When looking at some of the main experiences with the <em>listener</em> as the main focus we saw that:</p>
+
+    <p><em>Stream</em> required a fair amount of engagement and understanding. Not being populated without followers, it required users to not only understand the concept of having to follow other users to see updates, but it also required them to understand the difference between tracks and playlists, uploads and reposts. Things like statistics on tracks and playlists further added to this complexity.</p>
+
+    <p><em>You</em> had the exact same design as public profiles, but was being used in very different ways. While profiles were primarily about discovery and finding uploaded tracks by creators, <em>You</em> was about reconsumption and finding your way back to content you had already engaged with through likes and playlists. Even with this huge difference in usage, both pages shared the exact same design.</p>
+
+    <p>The <em>Activity Feed</em> was another remnant from SoundCloud’s creator-focus. It’s main value comes in informing creators about interactions happening on their content. For listeners, the only info they would generally see is when they were followed by someone. The data showed that despite placement at the top level of our navigation structure, a minimal percentage of the userbase even viewed this page and even less were interacting with the content.</p>
+
+    <p><em>Record</em> was another creator-centric feature that didn’t have a clear role in a listener-optimized product. While it had some very passionate users, when compared to the main usage patterns of the product, it was completely unused by the vast majority of users. In usability testing, <em>Record</em> also seemed to confuse users about what SoundCloud was for, giving an impression of a service primarily about recording sounds instead of listening to produced music. Given these points and many other considerations, we took the stance that <em>Record</em> didn’t make sense in an app focused on listening and would be best served by a separate, dedicated experience.</p>
+
+  </ul>
+
+
+</section>
+
+
+
+
+
+
+<hr>
+
+
+
+
+<!-- Simplification -->
+<section class="a-need-for-focus">
+
+  <p>Taking our understanding of the existing product, we decided to strip it down to it’s very core, orienting the entire product around some of it&rsquo;s most used features:</p>
+
+
+  <ul class="big">
+
+    <li>
+      <h1>Home</h1>
+      <p>Lean-back discovery, find something trending socially or globally, automatically surfaced to you with minimal user input.</p>
+    </li>
+
+    <li>
+      <h1>Search</h1>
+      <p>Lean-forward discovery, find something very specific to your tastes and preferences.</p>
+    </li>
+
+    <li>
+      <h1>You and your Collection</h1>
+      <p>Easy access to your Likes and Playlists.</p>
+    </li>
+
+    <li>
+      <h1>Player</h1>
+      <p>Playback management, control your current play session and engage further with what you're listening to.</p>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+
+<section class="last">
+
+  <p>These experiences formed our base for rebuilding the information architecture and making sure the most important features were always obvious and emphasized.</p>
+
+</section>
+
+
+  <hr>
+
+
+
+<!-- Intro -->
+
+<section class="intro">
+
+	<p>We had now set the stage for tackling the bigger, more innate problems — not resetting and starting from scratch, but instead carefully considering where we were coming from.</p>
+
+	<p>As work began on defining the product, discussions happening internally had never been more exciting. We had this chance to confront and properly challenge not only mobile SoundCloud’s foundation, but also the foundation of SoundCloud itself. In terms of listener engagement, mobile was fast becoming the lead platform, and SoundCloud wanted to use the project as an opportunity to align internal strategy with that external, mobile-first reality.</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Solidifying the Process -->
+
+<section class="a-closer-understanding">
+
+	<h2>A closer understanding</h2>
+
+	<p>With the internal excitement around the project, the scope kept increasing and we found ourselves in long unwinding debates around potential ideas and enthusiastic suggestions for very lofty ideas. We saw a need to effectively pivot some of these internal discussions around more concrete solutions. Early on in the project, we would huddle around a screen looking at wireframes and sketches, talking about how we could translate some of our thinking into doing. We eagerly embraced prototyping tools, further solidifying some of the ideas with animation and primitive interaction, but with every iteration we kept getting caught in treating each individual idea as a shippable product, almost like an idea that had to be complete for us to properly consider it’s value.</p>
+
+	<p>Discussions about how things looked, where they were placed, how animations worked, ruled the process, and we were slowly drifting away from keeping flexibility as the impetus for these dialogues, spending more time obsessing over specific details rather than using the results to stake out a general concept.</p>
+
+</section>
+
+
+
+
+<!-- Breakout Quote -->
+
+</div>
+
+<blockquote>&ldquo;A prototype is worth a thousand meetings.&rdquo;<br /><br /><h5 style="color: rgba(0,0,0,0.2)">VP of Design at Twitter, Mike Davidson</h5></blockquote>
+
+<div class="story">
+
+	<!-- End: Breakout Quote -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Prototypes -->
+
+	<section class="prototypes">
+
+		<p>To rid ourselves of considering design in detail, we had to altogether remove ourselves from it. A more rough-around-the-edges, raw and dynamic prototyping process was the solution — using the prototypes themselves as our tools and not as an end result of a design process.</p>
+
+		<p>With Kasper Lahti as our guide, our toolset steadily drifted away from Keynote, Omnigraffle, Sketch, and Quartz Composer towards Xcode, Storyboards, and Objective-C. Combined with the SoundCloud API, we could also work with real data and content, deliberately keeping things as rough as we could. All of a sudden it wasn’t about control and structure, typography, color or dimensions: it was about communicating a bigger picture, a more direct contact with the content and tools we had at hand, and the core of how a feature worked.</p>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Utilising Gestures -->
+
+	<section class="gestures last">
+
+		<h2>Utilising Gestures</h2>
+
+		<p>For design, prototyping meant thinking in flows and more deeply integrated interactions instead of screens. We felt strongly that gestures could be leveraged to bring ease and efficiency to key interactions beyond a visual, point-and-click oriented interface. Our understanding of how gestures worked, through prototyping, informed several of our final approaches, solving everything from core navigation to audio playback.</p>
+
+		<p>With a process of quick, prototype-driven iterations, we managed to get a feeling for the product, we could interact with gestures and get a sense of how some of these ideas were being used. Not only did it help us figure out what we needed to focus on, but it also helped us exclude anything that compromised the most important parts of the product.</p>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="inline-chapter">An interface you could read</h2>
+
+
+
+
+
+<!-- A history of building for audio creators -->
+
+<section class="a-history-of-building-for-creators">
+
+  <p>The interface had to be logically structured with the most important information up front, and detailed information and actions secondary. Things that people used the most should be the most readily accessible, and more detailed interactions should require one extra step, allowing us to create a simple up-front impression that didn’t overwhelm with information and interactions only occasionally needed.</p>
+
+  <p>Track-representations in <em>Stream</em>, <em>Search</em> and <em>Profiles</em> were a good example of over-informing, where the details could sometimes be overwhelming. Numbers and statistics for plays, comments, shares, and reposts all added up to requiring an understanding of what each of these numbers and symbols meant, and how they were associated with the track itself.</p>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Old Track Items in Stream -->
+
+</div>
+
+<figure>
+
+  <div class="image stream-before">
+
+    <img srcset="media/images/stream_before_sketch.png 1x, media/images/stream_before_sketch@2x.png 2x" alt="Before: Tracks and Playlist" title="Before: Tracks and Playlist">
+
+  </div>
+
+  <figcaption>Previous Track and Playlist representation in the Stream.</figcaption>
+
+</figure>
+
+
+<div class="story">
+
+  <!-- Old Track Items in Stream: END -->
+
+
+
+
+
+  <p>While stats informed users about engagement related to the track, in user-testing we saw they also confused people who didn’t understand how these numbers were distinctly useful from each other when making a decision to play a track. Stats also added a large amount of foreign elements that new users had to wrap their heads around, while giving the impression of a very technical product.</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Stream Updated  -->
+
+<section class="updated-stream">
+
+  <h2>New Tracks</h2>
+
+  <p>This resulted in a careful consideration of which statistics, metadata, and social context to include when presenting content. We stripped down the track items completely and only focused on including key information that clearly aided a playback decision.</p>
+
+
+
+
+  <!-- Updated Track Items -->
+
+</div>
+
+<figure>
+
+  <div class="image">
+
+    <img srcset="media/images/Tracks-After.png 1x, media/images/Tracks-After@2x.png 2x" alt="Updated Track Items" title="Updated Track Items">
+
+  </div>
+
+  <figcaption>Updated Track representation in the Stream.</figcaption>
+
+</figure>
+
+<div class="story">
+
+  <!-- Updated Track Items: END -->
+
+
+
+
+  <p>For the rest of the application this attitude of <em>reducing</em> and <em>simplifying</em> became the underlying principle. Instead of over-communcating we would focus on telling a more human story, an interface that you could <em>read</em>.</p>
+
+  <p>Always trying to radically simplify: What is the most important thing a person needs to implicitly understand in order to use a feature successfully?</p>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Explore and Discover -->
+
+
+</div> <!-- End story -->
+
+
+<section class="explore-and-discover">
+
+
+
+  <!-- Video -->
+  <div class="video">
+
+
+
+
+    <!-- Video Background -->
+    <div class="background">
+
+
+
+
+    <video autoplay loop poster="media/images/feed_picker.jpg">
+      <source src="media/videos/feed_picker.webm" type="video/webm">
+      <source src="media/videos/feed_picker.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+
+    </div>
+
+
+
+    <!-- Video Text Overlay -->
+    <div class="text">
+
+
+      <!-- Video Header -->
+      <div class="text-header">
+
+          <h1>Explore &amp; Discover</h1>
+          <h4>An impression through content</h4>
+
+      </div>
+
+
+      <p>With the new app, our users were be able to use SoundCloud on mobile without creating an account for the first time. We needed to provide users a simple way to experience the vast catalogue of music and audio that SoundCloud is, a simple interface to just “get-going” on that first app open. To solve this, we leveraged our <em>Explore</em> feature, seamlessly surfacing trending tracks by genre, giving a clear impression of SoundCloud through content.</p>
+
+      <p>The result was combining an updated <em>Stream</em> with <em>Explore</em>-genres into one interface that would adapt to user needs. <em>Explore</em> for new, logged out, lower engaged users. <em>Stream</em> for existing, logged in, higher engaged users.</p>
+
+    </div>
+
+
+  </div>
+
+
+  </section>
+
+
+  <div class="story">
+
+
+  <!-- Explore and Discover: END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Old Profiles and You -->
+
+      </div>
+
+
+      <section class="old-profiles-you">
+
+
+        <!-- Old Profiles and You Images -->
+
+      <figure>
+
+
+        <div class="image">
+
+          <img srcset="media/images/old_you_profile_white.png 1x, media/images/old_you_profile_white@2x.png 2x" alt="Previous Profiles and You" title="Previous Profiles and You">
+
+        </div>
+
+
+      </figure>
+
+
+      </section>
+
+
+      <div class="story">
+
+      <!-- Old Profiles and You Images: END -->
+
+
+      <section class="same-same-but-different">
+
+
+          <h6>Old Profiles and You</h6>
+          <h4>Same same but different</h4>
+
+
+          <p>The <em>You</em> experience of the old application was a complete replica of <em>Profiles</em>. With each of these experiences having very different patterns of use, we saw a need to completely focus the new <em>You</em> on how users accessed their Likes and Playlists. Instead of solving for both <em>You</em> and <em>Profiles</em> with the exact same design as before, we decided to separate the two and focus on designing the best experience for each one.</p>
+
+          <p><em>Profiles</em> had a legacy of being incredibly complex pages. Creators and curators had multiple ways to place and organize content in their profiles with <em>Upload</em>, <em>Repost</em>, <em>Like</em> or <em>Create Playlist</em>. We were confident this complexity was confusing for listeners and complicating the most urgent needs users have when visiting these pages.</p>
+
+          <p>Moving away from that legacy, we wanted the updated profiles to come across as something simple and human. Numbers, statistics, and interaction points were reduced and the first impression of a profile was greatly simplified.</p>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- New Profiles -->
+
+      </div>
+
+
+      <section class="nomargin">
+
+
+        <div class="columns profiles text-right stroke">
+
+
+          <div class="inner">
+
+
+            <!-- Image -->
+            <div class="image">
+
+              <img srcset="media/images/profiles-straight-crop.png 1x, media/images/profiles-straight-crop@2x.png 2x" alt="New Simplified Profiles" title="New Simplified Profiles">
+
+            </div>
+
+
+
+            <!-- Text -->
+            <div class="text">
+
+              <h1>New profiles</h1>
+              <h4>Simple and clear</h4>
+
+              <p>One of the key differences between accessing your own content and visiting someone else’s profiles was the concept of identity. For the <em>You</em> page, quick access to your favorite content was the most important part, but for a profile it was about identity; getting an impression of who this is and feeling invited to engage with their content.</p>
+
+              <p>Without the overwhelming presentation of statistics and content, the profiles were simplified into a more human first impression. The top of profiles functioning as a simple way to get to know the creator and easily listen to a profile.</p>
+
+              <p>For users looking for specific Tracks or Playlists, the bottom half of the profile surfaced the most important content in a single layout, providing entry points into more specific types of content related to a profile.</p>
+
+            </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+      </section>
+
+
+      <div class="story">
+
+
+      <!-- New Profiles: END  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- New Updated You / Collection -->
+
+      </div>
+
+
+      <section class="nomargin">
+
+
+        <div class="columns collection text-left stroke" style="border-top: none; margin-bottom: 0;">
+
+
+        <div class="inner">
+
+            <!-- Text -->
+            <div class="text">
+
+              <h1>The new you</h1>
+              <h4>Easy access to your collection</h4>
+
+              <p>We pivoted the new <em>You</em> page around what users needed the most — quick access to Likes and Playlists. The goal was to clearly emphasize the most frequently accessed content, giving highest priority to Likes, while also placing playlists on the same level to clarify their usefulness and encourage the potential they were showing in driving future engagement.</p>
+
+              <p>Compared to <em>Profiles</em>, we focused <em>You</em> completely on fast, clear access to content, removing the emphasis on a profile image and your own statistics (Follower count, and Track count), moving the more detailed information into what we called the “More” page.</p>
+
+              <p>The idea was to focus on a content-first experience and detailed information second. With the “More” tab containing Following Lists, Settings and other information, features related to more in-depth control of your own profile.</p>
+
+            </div>
+
+
+
+
+             <!-- Image -->
+            <div class="image">
+
+              <img srcset="media/images/collection.png 1x, media/images/collection@2x.png 2x" alt="Your Collection" title="Your Collection">
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+          </div>
+
+
+
+      </section>
+
+
+      <div class="story">
+
+
+      <!-- New Updated You / Collection: END  -->
+
+
+
+
+
+
+<!-- History of the Player -->
+
+<section class="history-of-the-player">
+
+
+  <p>We knew that one of the most important experiences we had to solve was audio playback. Given the fact that SoundCloud is an audio app, the possibility to easily manage and control your playback experience is one of its most important experiences.</p>
+
+  <p>In terms of audio interfaces, we looked closely at how things were currently being solved and realized that key interactions hadn’t really changed that much since the invention of the stereo. What it meant to interact with audio had barely changed since it was translated from the physical world to the digital, and more importantly; in the translation from desktop computers to mobile devices.</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Player Problems -->
+
+<section class="player-problems">
+
+  <h2>Problems</h2>
+  <p>Although these interfaces offered a great way of controlling all aspects of playback, if you start thinking about these in <em>mobile</em> terms, there are some inherent problems:</p>
+
+  <ul>
+
+    <li>All controls are always visible. Sometimes crowding the interface with irrelevant buttons and UI. On a mobile device every area of the available canvas is precious.</li>
+
+    <li>They’ve been adapted from working in the physical world or on a computer where you have the possibility to press a physical button or have very nimble control with a pointer. When you pair this with a crowded UI, interaction becomes difficult.</li>
+
+    <li>More importantly, they’re not mobile optimized — far from it. Where the use of gestures are so deeply established and integrated in how people use their smartphones, small hit targets and intricate interactions don’t make sense. Scrubbing a small bullet point on a thin timeline, or tapping a little pause button in between four other buttons while on the go isn’t the greatest experience for playing music on a smart phone.</li>
+
+  </ul>
+
+
+  </section>
+
+
+
+<section class="old-player-analysis">
+
+
+
+<!-- Old Player Analysis -->
+
+</div>
+
+<figure>
+
+  <div class="image">
+
+    <img srcset="media/images/player_analysis.png 1x, media/images/player_analysis@2x.png 2x" alt="The Previous Player" title="The Previous Player">
+
+  </div>
+
+  <figcaption>In terms of presenting a complicated audio interface, SoundCloud was no different.</figcaption>
+
+</figure>
+
+
+
+<div class="story">
+
+<!-- Old Player Analysis: END -->
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- A Simpler Playback Experience -->
+
+ <section class="a-simpler-playback-experience">
+
+  <h2>A Simpler Playback Experience</h2>
+
+    <p>What we wanted was a simple, but yet feature-rich playback experience. Given that we couldn’t strip away key features like <em>Play</em> and <em>Pause</em>, <em>Previous</em> and <em>Next</em>, and some of the main SoundCloud engagements, our idea was to divide functionality related to actual use and emphasis. Presenting the player initially as something really simple, completely optimized for high-usage playback control: <em>Play</em>, <em>Pause</em>, <em>Previous</em> and <em>Next</em>, while secondarily providing access to more detailed, lower-usage engagements: <em>Like</em>, <em>Repost</em> and <em>Share</em>.</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Getting There -->
+
+<section class="getting-there">
+
+  <h2>Getting There</h2>
+
+  <p>From the start we had a general idea for what we wanted the player to emphasize, but we didn’t have a clear picture about how to integrate different types of controls and information. We knew that we needed to optimize for basic playback controls, but we were unsure about whether we needed to inform users about where they were playing from (e.g. Playing from &ldquo;Sunday Playlist&rdquo;) and viewing the description of a track.</p>
+
+  <p>Specifically, what we struggled with was the balance between informing too much versus informing too little. Early on we tried to include things like upcoming tracks, information about the user, track description, etc.</p>
+
+</section>
+
+
+
+
+
+
+<!-- Prototypes: Up next and Track Info-->
+
+<section class="early-prototypes">
+
+</div>
+
+<figure>
+
+  <div class="images">
+
+
+
+    <li><img srcset="media/images/up_next.png 1x, media/images/up_next@2x.png 2x" alt="Prototype: Up Next" title="Prototype: Up Next"></li>
+    <li><img srcset="media/images/track_info.png 1x, media/images/track_info@2x.png 2x" alt="Prototype: Track Info" title="Prototype: Track Info"></li>
+
+  </div>
+
+  <figcaption>Informing the user about playback context and trajectory.</figcaption>
+
+</figure>
+
+
+</section>
+
+
+<div class="story">
+
+<!-- Old SoundCloud App: END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The More We Informed  -->
+
+
+  <p>In the end, after countless usability tests, we realized that all this information actually made users more disoriented than informed. For instance: exposing the playback trajectory made users try to figure out what was going on, and in what context they were playing the track in.</p>
+
+
+</section>
+
+
+
+
+ <!-- Breakout Quote -->
+
+  </div>
+
+  <blockquote>&ldquo;The more we informed, the more we confused people.&rdquo;</blockquote>
+
+  <div class="story">
+
+  <!-- End: Breakout Quote -->
+
+
+
+
+
+
+
+
+
+
+
+<section class="no-distractions">
+
+
+  <p>Our goal was to make an immersive experience that focused purely on the listening experience, devoid of any distractions.</p>
+
+  <p>When you’re listening to audio on your mobile phone it’s usually somewhere away from you. The use-case was that you mostly have your phone in a few places while listening to audio:</p>
+
+  <ul>
+
+    <li>In your hand while using other applications with your audio app in the background.</li>
+    <li>In your hand while using your audio app, either managing what’s currently playing or selecting something different to listen to.</li>
+    <li>In your pocket while listening through earbuds or headphones.</li>
+    <li>Connected to a stereo or sound system.</li>
+
+  </ul>
+
+  <p>When understanding how people listened to audio on their phones, we saw discovery as something distinct from listening. The idea was that instead of solving for two parallel processes — actively finding audio and passively listening to it — rather focus on creating the best possible experience for discovery and playback.</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- New Player -->
+
+</div>
+
+
+<section class="new-player">
+
+
+<div class="columns player text-right stroke" style="border-bottom: none;">
+
+
+<div class="inner">
+
+    <!-- Image -->
+    <div class="image">
+
+      <img srcset="media/images/player-fixed-waveform-crop.png 1x, media/images/player-fixed-waveform-crop@2x.png 2x" alt="New Playback Experience" title="New Playback Experience">
+
+    </div>
+
+
+
+    <!-- Text -->
+    <div class="text">
+
+      <h1>The Player</h1>
+      <h4>An immersive experience</h4>
+
+      <p>In the end, we arrived at just the right mixture of ingredients; engagements, information and interactions together creating a simple impression of what it meant to play audio on SoundCloud. Moving away from an interface screaming for attention, into a canvas for interactions, emphasizing the most important thing about SoundCloud: music and audio.</p>
+
+      <p>With our new <em>Player</em> being specifically designed and built for the mobile use-case, everything in it was supporting the idea of playing music while you were on the go. Big bold artwork, making it easy to scan, giving all the available space on the phone back to the creator. A glance down at your phone immediately tells you what you’re listening to, and it sets the tone for your audio and music experience.</p>
+
+      <p>With trying to simplify the interface, more commonly used actions related to playback control became a part of this new canvas, dedicating the entirety of the screen for actions that people used the most: Play and Pause. For further playback control; going to the next track or seeking within a track could be controlled just as easily.</p>
+
+      <p>Engagements lived alongside actions for controlling playback and had the same logical structure. Elevating the single most used, familiarized and simple of engagements: Like, while still retaining the more detailed information and actions (like <em>Repost</em>, <em>Share</em> and <em>Add to Playlist</em>) behind a “More” button, allowing for another dedicated space for actions that required more detailed control.</p>
+
+    </div>
+
+
+  </div>
+
+  </div>
+
+
+
+</section>
+
+
+<!-- New Updated You / Collection: END  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- It's all in the wrist -->
+
+<section class="its-all-in-the-wrist nomargin">
+
+
+
+<!-- Video -->
+<div class="video nomargin">
+
+
+
+
+     <!-- Video Background -->
+    <div class="background">
+
+
+
+       <video autoplay loop poster="media/images/player.jpg">
+        <source src="media/videos/player.webm" type="video/webm">
+        <source src="media/videos/player.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+      </video>
+
+
+
+
+    </div>
+
+
+    <!-- Video Text -->
+    <div class="text">
+
+
+        <!-- Video Header -->
+        <div class="text-header">
+
+            <h1>It&rsquo;s all in the wrist</h1>
+            <h4>Utilizing mobile gestures</h4>
+
+        </div>
+
+
+        <p>Utilizing gestures was one of the most important assets in solving the player, and we obsessed excessively over getting the interactions <em>just right</em>. With a tap, trigger two modes of playback; <em>Play</em> and <em>Pause</em>, each containing the same controls, but different in visualization to clearly communicate which mode you were in.</p>
+
+        <p>We isolated visually displaying controls to Pause-mode only with the goal of teaching users that they could use the entire canvas to control playback. To change tracks, simply swipe left or right.</p>
+
+        <p>For seeking within a track, we treated SoundCloud’s iconic waveform as a physical object. With your current position always centered on the screen, simply moving the waveform with your finger moved forwards or backwards in the track.</p>
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<div class="story">
+
+
+<!-- It's all in the wrist: END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Details in the Back -->
+
+<section class="details-in-the-back">
+
+  <h2>Details in the back</h2>
+
+  <p>The general approach of the player adapted the same philosophy as the entire app: a simple first impression up front, with more comprehensive functionality in the back. With the <em>Player</em> requiring a large set of functionality, we had to find a natural and graceful way of integrating some of the more sophisticated features and engagements without losing simplicity.</p>
+
+  <p>Instead of exposing <em>Liking</em>, <em>Reposting</em>, <em>Sharing</em>, <em>Commenting</em> and <em>Track Info</em> on the same level as the old app did, we chose to primarily emphasize <em>Like</em> above all other engagements and secondarily provide access to additional functionality.</p>
+
+    <p>The “More” menu also added some much needed canvas to the player and isolated it away from playback control. Furthermore, the idea was that as the player and its functionality grew in the future, we would utilize the added extra space that the “More” menu provided.</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The Backbone of the App -->
+
+<section class="the-backbone-of-the-app last">
+
+  <h2>The Backbone of the App</h2>
+
+  <p>In the end, the player became the focal point for the entirety of the app. Everything we built, all the features we included, were built around the player. Every experience was made to simply “feed” the player, and get users into a long and great listening session as quickly as possible. <em>The Player became the backbone of the app</em>.</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+  <hr>
+
+
+
+<!-- Changing existing paradigms takes a lot of time -->
+
+<section class="changing-existing-paradigms-takes-a-lot-of-time">
+
+	<h2>Changing existing paradigms takes a lot of time</h2>
+
+	<p>When we first started, we were so eager to change everything. Not only were we going to rebuild an existing product from the ground up, but we were going to redefine navigation on a mobile device too!</p>
+
+	<p>There are definite gains to be had with setting the bar high. In the end, you might reach halfway to a very optimistic goal which leaves you with something great, but (and there’s a huge <em>but</em> here) don’t take for granted some of the things you get for free.</p>
+
+	<p>When being ambitious, there’s a balance that needs to be met. Redefining existing paradigms can be a huge investment and requires patience. Value your time, challenge the parts of a product that are essential to making it great, otherwise leverage existing paradigms when you can. In our case, the essential part of the SoundCloud product wasn’t navigation, it was the <em>Player</em>.</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- You can’t push innovation in all parts of the product -->
+
+<section class="you-cant-push-innovation-in-all-parts-of-the-product">
+
+	<h2>You can’t push innovation in all parts of the product</h2>
+	<p>Like with navigation, we had <em>illusions of grandeur</em> for all other parts of the app. <em>Stream</em> was going to be something utterly revolutionary and profiles were going to blow people away. We spent a lot of time fighting against some of the legacy that was already in place, and we wanted everything to be something truly innovative and every part of the app to be something unseen.</p>
+
+	<p>What we saw was that working in isolation on individual experiences, trying to push innovation in everything we did, as a whole, the app became disconnected, there was no red thread going through it, no focal point. Towards the end of the process, it became very clear that the app was all about playback, it just took us a long time to realize that.</p>
+
+	<p>That realization of focusing on one part innovation and one part basic helped us focus our efforts. The app was going to be about playing relevant and long listening sessions in the player, and every other experience was about driving just that.</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Kill your darlings -->
+
+<section class="killing-your-darlings">
+
+	<h2>Killing your darlings</h2>
+
+	<p>There were so many ideas that we were incredibly attached to but didn’t include in the app. In the end, to make a focused product you need to kill your darlings. Challenge the basic assumptions behind every idea, no matter how amazing it seems, and have complete confidence that what you build truly reflects the needs of the user.</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Thanks -->
+
+<section>
+
+	<h2>Thanks</h2>
+
+	<p>Finally, I want to give a massive round of thanks to everyone involved.</p>
+
+
+</section>
+
+
+
+<!-- Group Photo -->
+
+
+</div>
+
+<div class="image group">
+
+  <img srcset="media/images/team.png 1x, media/images/team@2x.png 2x" alt="The Team" title="The Team">
+
+</div>
+
+
+<div class="story">
+
+<!-- Group Photo: END -->
+
+<section class="thanks last">
+
+		<p>I want to eternally thank <em>Kasper Lahti</em> for the mountain of prototypes, rapid iterations and for working faster than I thought was humanly possible. You made this product what it is today and without your insights we wouldn’t have made one of the most beautiful playback experiences there is.</p>
+
+		<p><em>Amir Shaikh</em>, without you and your openness as a Product Manager, this project wouldn’t have been possible. You made this happen and we just happily joined you for the ride. Also want to thank you so much for helping me revise and oversee the text, your input was invaluable.</p>
+
+		<p><em>Eric Wahlforss</em>, for being the greatest, most hands-on CTO I’ve ever had the chance to work with. You allowed us to create, to push forward and to innovate, and I thank you for that.</p>
+
+		<p><em>Jørgen Bull</em>, for helping out at the last second with preparing the awesome videos.
+
+		<p>To everyone else: James, Aurelie, Sarah, Mustafa, Vincent, Richard, Michael, Jon (&ldquo;Schmitty&rdquo;), Robb, Rob, Slavko, Jan, Slav, Benjamin and the amazing SoundCloud Design Team &mdash; Thanks!</p>
+
+		<p>And finally, to <em>Anne</em> for putting up with my constant nagging, questioning and doubting periods. Love ya!x</p>
+
+	</ul>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+
+ <!-- The End -->
+  <article class="introduction">
+
+    <!-- Thanks for reading -->
+    <p>Thanks for reading. If you enjoyed learning about SoundCloud, subscribe to my mailing list for a peek at what I'm building next.</p>
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://michaelevensen.us9.list-manage.com/subscribe/post?u=72462a2ef4f098a85ba86706a&amp;id=b7600a9af8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+
+    <div class="mc-field-group">
+      <!-- <label for="mce-EMAIL">Email Address </label> -->
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_72462a2ef4f098a85ba86706a_b7600a9af8" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+
+  </article>
+
+  <hr>
+
+
+  <div class="links">
+
+
+                    <li id="twitter"><a href="../twitter.com/michaelnevensen.html" target="_blank"></a></li>
+                    <li id="linkedin"><a href="http://no.linkedin.com/in/michaelevensen" target="_blank"></a></li>
+                    <li id="github"><a href="https://github.com/michaelevensen" target="_blank"></a></li>
+
+                </div>
+
+
+
+</footer>
+
+
+
+          </body>
+          </html>
