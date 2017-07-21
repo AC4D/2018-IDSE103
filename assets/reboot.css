@@ -342,3 +342,7 @@ table {
 thead td {
   color: #868e96;
 }
+
+h5 {
+  margin: 0;
+}
