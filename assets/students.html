@@ -20,15 +20,14 @@
     <script>
       students = ['Adam', 'Jay', 'Joshua', 'Kaley', 'Maria', 'Mariangela', 'Mary', 'Nicole', 'Noah', 'Scott'];
       groups = document.getElementById("groups");
-
+      studentList = document.getElementById("students");
 
       function renderStudents() {
-        studentList = document.getElementById("students");
         studentList.innerHTML = '';
         
         groupBy = parseInt(groups.options[groups.selectedIndex].value);
 
-        for (var i = 0; i < students.length) {
+        while (i < students.length) {
           studentsToGroup = groupBy;
           newStudentsItem = "<li>";
           while(studentsToGroup > 0) {
