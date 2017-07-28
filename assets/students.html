@@ -26,7 +26,7 @@
         studentList = document.getElementById("students");
         studentList.innerHTML = '';
         
-        groupBy = parseInt(groups.value);
+        groupBy = parseInt(groups.options[groups.selectedIndex].value);
 
         for (var i = 0; i < students.length) {
           studentsToGroup = groupBy;
