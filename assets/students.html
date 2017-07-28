@@ -19,15 +19,25 @@
 
     <script>
       students = ['Adam', 'Jay', 'Joshua', 'Kaley', 'Maria', 'Mariangela', 'Mary', 'Nicole', 'Noah', 'Scott'];
+      groups = document.getElementById("groups");
 
 
       function renderStudents() {
         studentList = document.getElementById("students");
         studentList.innerHTML = '';
+        
+        groupBy = parseInt(groups.value);
 
-        for (var i = 0; i < students.length; i++) {
-          newStudentItem = "<li>" + students[i] + "</li>";
-          studentList.insertAdjacentHTML('beforeend',newStudentItem);
+        for (var i = 0; i < students.length) {
+          studentsToGroup = groupBy;
+          newStudentsItem = "<li>";
+          while(studentsToGroup > 0) {
+            newStudentsItem += students[i] + "<br />";
+            studentsToGroup -= 1;
+            i += 1;
+          }
+          newStudentsItem += "</li>";
+          studentList.insertAdjacentHTML('beforeend',newStudentsItem);
         }
       }
 
