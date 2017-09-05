@@ -1,5 +1,5 @@
 {
   "routes": {
-    "/*.html": "syllabus.html",
+    "/*.html": "syllabus.html"
   }
 }
