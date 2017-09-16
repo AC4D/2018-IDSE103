@@ -195,43 +195,43 @@
             </text>
             <path d="M241.837503,308.712497 L272.475,278.075" id="Line-3" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
             <path d="M272.475,278.075 L365.235565,278.075" id="Line-4" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="On/Off-Button" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="288.069141" y="275">On/Off Button</tspan>
+            <text id="On/Off-Button" font-family="OpenSans, Open Sans" font-size="10.3999996" font-weight="normal" fill="#000000">
+                <tspan x="284.207033" y="275">On/Off Button</tspan>
             </text>
             <path d="M233.275,376.425 L266.642686,343.057314" id="Line-5" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
             <path d="M705.075,376.425 L738.442686,343.057314" id="Line-5" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <path d="M738.675,343.175 L861.537464,343.175" id="Line-6" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="Omni-directional-Spr" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="745.100781" y="340.1">Omni-directional Sprinklers</tspan>
+            <path d="M738.675,343.175 L872.5,343.175" id="Line-6" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Omni-directional-Spr" font-family="OpenSans, Open Sans" font-size="10.3999996" font-weight="normal" fill="#000000">
+                <tspan x="739.339065" y="340.1">Omni-directional Sprinklers</tspan>
             </text>
             <path d="M266.875,343.175 L375.725563,343.175" id="Line-6" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="Omni-directional-Spr" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="267.875781" y="340.1">Omni-directional Sprinklers</tspan>
+            <text id="Omni-directional-Spr" font-family="OpenSans, Open Sans" font-size="8.39999962" font-weight="normal" fill="#000000">
+                <tspan x="267.875784" y="340.1">Omni-directional Sprinklers</tspan>
             </text>
-            <path d="M187.075,508.725 L222.495968,473.304032" id="Line-7" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <path d="M222.775,473.375 L373.978646,473.375" id="Line-8" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="Cleaning-Solution-Re" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="224.852441" y="469.25">Cleaning Solution Refillable Container</tspan>
+            <path d="M147.075,508.725 L182.495968,473.304032" id="Line-7" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M182.775,473.375 L370.5,473.375" id="Line-8" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Cleaning-Solution-Re" font-family="OpenSans, Open Sans" font-size="10.3999996" font-weight="normal" fill="#000000">
+                <tspan x="187.347074" y="469.25">Cleaning Solution Refillable Container</tspan>
             </text>
             <path d="M181.475,164.325 L215.456557,130.343443" id="Line-9" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <path d="M215.425,130.375 L354.376763,130.375" id="Line-10" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="Extra-thick-durable" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="220.894434" y="125.9">Extra-thick durable rubber-mesh</tspan>
+            <path d="M215.425,130.375 L379.5,130.375" id="Line-10" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Extra-thick-durable" font-family="OpenSans, Open Sans" font-size="10.3999996" font-weight="normal" fill="#000000">
+                <tspan x="221.209183" y="125.9">Extra-thick durable rubber-mesh</tspan>
             </text>
-            <path d="M676.375,508.725 L711.795968,473.304032" id="Line-7" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <path d="M712.075,473.375 L863.278646,473.375" id="Line-8" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="Cleaning-Solution-Re" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="714.152441" y="469.25">Cleaning Solution Refillable Container</tspan>
+            <path d="M656.375,508.725 L691.795968,473.304032" id="Line-7" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M692.075,473.375 L877.5,473.375" id="Line-8" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Cleaning-Solution-Re" font-family="OpenSans, Open Sans" font-size="10.3999996" font-weight="normal" fill="#000000">
+                <tspan x="694.647074" y="469.25">Cleaning Solution Refillable Container</tspan>
             </text>
             <path d="M670.775,164.325 L704.756557,130.343443" id="Line-9" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <path d="M704.725,130.375 L843.676763,130.375" id="Line-10" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="Extra-thick-durable" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="710.194434" y="125.9">Extra-thick durable rubber-mesh</tspan>
+            <path d="M704.725,130.375 L872.5,130.375" id="Line-10" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Extra-thick-durable" font-family="OpenSans, Open Sans" font-size="10.3999996" font-weight="normal" fill="#000000">
+                <tspan x="710.996683" y="125.9">Extra-thick durable rubber-mesh</tspan>
             </text>
             <path d="M598.325,330.225 L634.73173,293.81827" id="Line-11" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <path d="M634.725,293.825 L730.627555,293.825" id="Line-12" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
-            <text id="Battery-&amp;-Water-Pump" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
-                <tspan x="637.361621" y="290.4">Battery &amp; Water Pump </tspan>
+            <path d="M634.725,293.825 L747.5,293.825" id="Line-12" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Battery-&amp;-Water-Pump" font-family="OpenSans, Open Sans" font-size="10.3999996" font-weight="normal" fill="#000000">
+                <tspan x="636.906057" y="290.4">Battery &amp; Water Pump </tspan>
             </text>
         </g>
     </g>
