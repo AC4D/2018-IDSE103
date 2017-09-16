@@ -12,7 +12,8 @@
 	.st6{font-size:26.1643px;}
 	.st7{font-size:52.3286px;}
 	.st8{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
-	.st9{font-size:40.3678px;}
+	.st9{font-family:'MyriadPro-Regular';}
+	.st10{font-size:40.3678px;}
 </style>
 <image style="display:none;overflow:visible;enable-background:new    ;" width="3101" height="2769" xlink:href="D9B47188469FADF5.jpeg"  transform="matrix(9.893850e-02 0 0 9.886042e-02 3033.5532 1017.4361)">
 </image>
@@ -236,19 +237,19 @@
 	</g>
 </g>
 <text transform="matrix(1 0 0 1 2285.5078 362.1172)" class="st5 st6">6 in</text>
-<text transform="matrix(1 0 0 1 185.4594 83.2759)" class="st5 st7">The </text>
-<text transform="matrix(1 0 0 1 168.0594 146.0759)" class="st5 st7">Focus</text>
-<text transform="matrix(1 0 0 1 115.1594 208.8759)" class="st5 st7">Headpiece</text>
+<text transform="matrix(1 0 0 1 209.6173 126.5807)" class="st9 st7">The </text>
+<text transform="matrix(1 0 0 1 192.2174 189.3807)" class="st9 st7">Focus</text>
+<text transform="matrix(1 0 0 1 139.3174 252.1807)" class="st9 st7">Headpiece</text>
 <rect x="97.1" y="314.9" class="st0" width="289.2" height="504.7"/>
-<text transform="matrix(1 0 0 1 111.121 343.5908)" class="st5 st9">Funnel shaped</text>
-<text transform="matrix(1 0 0 1 359.921 343.5908)" class="st5 st9">-</text>
-<text transform="matrix(1 0 0 1 99.021 391.9908)" class="st5 st9">design and noise </text>
-<text transform="matrix(1 0 0 1 102.021 440.4908)" class="st5 st9">cancelling mate</text>
-<text transform="matrix(1 0 0 1 369.021 440.4908)" class="st5 st9">-</text>
-<text transform="matrix(1 0 0 1 118.321 488.8908)" class="st5 st9">rial allows user </text>
-<text transform="matrix(1 0 0 1 108.021 537.3908)" class="st5 st9">to keep their at</text>
-<text transform="matrix(1 0 0 1 363.021 537.3908)" class="st5 st9">-</text>
-<text transform="matrix(1 0 0 1 109.921 585.7908)" class="st5 st9">tention on their </text>
-<text transform="matrix(1 0 0 1 199.721 634.1908)" class="st5 st9">work</text>
-<rect x="97.1" y="40.5" class="st8" width="263.9" height="186.6"/>
+<text transform="matrix(1 0 0 1 120.9066 386.8956)" class="st9 st10">Funnel shaped</text>
+<text transform="matrix(1 0 0 1 369.7067 386.8956)" class="st9 st10">-</text>
+<text transform="matrix(1 0 0 1 108.8066 435.2956)" class="st9 st10">design and noise </text>
+<text transform="matrix(1 0 0 1 111.8066 483.7956)" class="st9 st10">cancelling mate</text>
+<text transform="matrix(1 0 0 1 378.8066 483.7956)" class="st9 st10">-</text>
+<text transform="matrix(1 0 0 1 128.1066 532.1956)" class="st9 st10">rial allows user </text>
+<text transform="matrix(1 0 0 1 117.8066 580.6956)" class="st9 st10">to keep their at</text>
+<text transform="matrix(1 0 0 1 372.8066 580.6956)" class="st9 st10">-</text>
+<text transform="matrix(1 0 0 1 119.7067 629.0956)" class="st9 st10">tention on their </text>
+<text transform="matrix(1 0 0 1 209.5067 677.4956)" class="st9 st10">work</text>
+<rect x="119.7" y="83.8" class="st8" width="271.9" height="186.6"/>
 </svg>
