@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420px" height="603px" viewBox="0 0 420 603" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard With Notes (In Use)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="48.65" y="223.65" width="63.7" height="261.1"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="63.7" height="261.1" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="114.1" y="350" width="262.15" height="52.5"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="262.15" height="52.5" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="48.65" y="486.15" width="327.6" height="64.05"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="327.6" height="64.05" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="48.65" y="142.1" width="327.6" height="80.5"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="327.6" height="80.5" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-With-Notes-(In-Use)">
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="140" cy="376.25" r="4.55"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="170.45" cy="376.25" r="4.55"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="201.25" cy="376.25" r="4.55"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="232.05" cy="376.25" r="4.55"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="262.85" cy="376.25" r="4.55"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="293.65" cy="376.25" r="4.55"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="324.45" cy="376.25" r="4.55"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.05" stroke-linecap="square" stroke-dasharray="0.7,1.75" cx="355.25" cy="376.25" r="4.55"></circle>
+            <path d="M48.9789157,572.425 L375.375,572.425" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M59.7789157,575.425 L48.9789157,572.425 L59.7789157,569.425" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M364.575,575.425 L375.375,572.425 L364.575,569.425" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M48.9789157,564.025 L108.675,564.025" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M59.7789157,567.025 L48.9789157,564.025 L59.7789157,561.025" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M97.875,567.025 L108.675,564.025 L97.875,561.025" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M25.725,488.075 L25.725,548.975" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M22.725,498.875 L25.725,488.075 L28.725,498.875" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M22.725,538.175 L25.725,548.975 L28.725,538.175" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M25.725,142.975 L25.725,220.325" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M22.725,153.775 L25.725,142.975 L28.725,153.775" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M22.725,209.525 L25.725,220.325 L28.725,209.525" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M25.725,225.925 L25.725,482.475" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M22.725,236.725 L25.725,225.925 L28.725,236.725" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M22.725,471.675 L25.725,482.475 L28.725,471.675" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M46.9,554.05 L46.9,575.75" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M44.625,551.929412 L22.575,551.929412" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M44.625,485.429412 L22.575,485.429412" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M44.625,223.279412 L22.575,223.279412" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M402.325,402.479412 L380.275,402.479412" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M402.325,349.979412 L380.275,349.979412" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M402.325,140.679412 L380.275,140.679412" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M44.625,140.329412 L22.575,140.329412" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M111.475,554.029412 L111.475,569.625" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M379.05,554.05 L379.05,575.75" id="Line" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <use id="Rectangle-3" stroke="#000000" mask="url(#mask-2)" stroke-width="2.8" stroke-dasharray="2.1" xlink:href="#path-1"></use>
+            <use id="Rectangle-3" stroke="#000000" mask="url(#mask-4)" stroke-width="2.8" stroke-dasharray="2.1" xlink:href="#path-3"></use>
+            <use id="Rectangle-2" stroke="#000000" mask="url(#mask-6)" stroke-width="2.8" stroke-dasharray="2.1" xlink:href="#path-5"></use>
+            <use id="Rectangle-2" stroke="#000000" mask="url(#mask-8)" stroke-width="2.8" stroke-dasharray="2.1" xlink:href="#path-7"></use>
+            <rect id="Rectangle" stroke="#000000" stroke-width="1.4" x="47.25" y="140.7" width="331.1" height="410.55"></rect>
+            <text id="95mm" font-family="Helvetica" font-size="6.3" font-weight="normal" fill="#000000">
+                <tspan x="203.348291" y="569.5">95mm</tspan>
+            </text>
+            <text id="18mm" font-family="Helvetica" font-size="6.3" font-weight="normal" fill="#000000">
+                <tspan x="69.998291" y="561.1">18mm</tspan>
+            </text>
+            <text id="18mm" transform="translate(30.800000, 519.575000) rotate(90.000000) translate(-30.800000, -519.575000) " font-family="Helvetica" font-size="6.3" font-weight="normal" fill="#000000">
+                <tspan x="22.048291" y="520.5">18mm</tspan>
+            </text>
+            <text id="74mm" transform="translate(30.800000, 355.075000) rotate(90.000000) translate(-30.800000, -355.075000) " font-family="Helvetica" font-size="6.3" font-weight="normal" fill="#000000">
+                <tspan x="22.048291" y="356">74mm</tspan>
+            </text>
+            <path d="M387.275,143.287807 L387.275,347.025" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M384.275,154.087807 L387.275,143.287807 L390.275,154.087807" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M384.275,336.225 L387.275,347.025 L390.275,336.225" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M387.275,352.625 L387.275,399.525" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M384.275,363.425 L387.275,352.625 L390.275,363.425" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M384.275,388.725 L387.275,399.525 L390.275,388.725" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="60mm" transform="translate(392.000000, 246.575000) rotate(90.000000) translate(-392.000000, -246.575000) " font-family="Helvetica" font-size="6.3" font-weight="normal" fill="#000000">
+                <tspan x="383.248291" y="248.55">60mm</tspan>
+            </text>
+            <text id="15mm" transform="translate(392.000000, 376.775000) rotate(90.000000) translate(-392.000000, -376.775000) " font-family="Helvetica" font-size="6.3" font-weight="normal" fill="#000000">
+                <tspan x="383.248291" y="378.75">15mm</tspan>
+            </text>
+            <text id="23mm" transform="translate(30.800000, 182.525000) rotate(90.000000) translate(-30.800000, -182.525000) " font-family="Helvetica" font-size="6.3" font-weight="normal" fill="#000000">
+                <tspan x="22.048291" y="183.45">23mm</tspan>
+            </text>
+            <path d="M25.725,225.925 L25.725,482.475" id="Line-2" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-1" d="M22.725,236.725 L25.725,225.925 L28.725,236.725" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path id="Line-2-decoration-2" d="M22.725,471.675 L25.725,482.475 L28.725,471.675" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Side-(in-use)" font-family="OpenSans, Open Sans" font-size="22.4" font-weight="normal" fill="#000000">
+                <tspan x="49.075" y="36.6">Side (in use)</tspan>
+            </text>
+            <g id="Group" transform="translate(122.850000, 106.050000)" stroke="#000000">
+                <rect id="Rectangle-4" stroke-width="1.4" x="0.7" y="0.7" width="8.4" height="311.85" rx="2.8"></rect>
+                <polygon id="Polygon" stroke-width="1.05" stroke-linecap="square" transform="translate(4.900000, 316.400000) rotate(-180.000000) translate(-4.900000, -316.400000) " points="4.9 312.2 8.89443737 315.102129 7.36869806 319.797871 2.43130194 319.797871 0.905562632 315.102129"></polygon>
+            </g>
+            <g id="Group" transform="translate(180.600000, 112.700000)" stroke="#000000">
+                <rect id="Rectangle-4" stroke-width="1.4" x="0.7" y="0.7" width="8.4" height="243.95" rx="2.8"></rect>
+                <polygon id="Polygon" stroke-width="1.05" stroke-linecap="square" transform="translate(4.900000, 247.942509) rotate(-180.000000) translate(-4.900000, -247.942509) " points="4.9 244.935018 8.89443737 247.232537 7.36869806 250.95 2.43130194 250.95 0.905562632 247.232537"></polygon>
+            </g>
+            <g id="Group" transform="translate(211.750000, 123.550000)" stroke="#000000">
+                <rect id="Rectangle-4" stroke-width="1.4" x="0.7" y="0.7" width="8.4" height="311.85" rx="2.8"></rect>
+                <polygon id="Polygon" stroke-width="1.05" stroke-linecap="square" transform="translate(4.900000, 316.400000) rotate(-180.000000) translate(-4.900000, -316.400000) " points="4.9 312.2 8.89443737 315.102129 7.36869806 319.797871 2.43130194 319.797871 0.905562632 315.102129"></polygon>
+            </g>
+            <g id="Group" transform="translate(274.400000, 90.650000)" stroke="#000000">
+                <rect id="Rectangle-4" stroke-width="1.4" x="0.7" y="0.7" width="8.4" height="227.5" rx="2.8"></rect>
+                <polygon id="Polygon" stroke-width="1.05" stroke-linecap="square" transform="translate(4.900000, 231.300798) rotate(-180.000000) translate(-4.900000, -231.300798) " points="4.9 228.451596 8.89443737 230.628193 7.36869806 234.15 2.43130194 234.15 0.905562632 230.628193"></polygon>
+            </g>
+            <g id="Group" transform="translate(302.050000, 75.250000)" stroke="#000000">
+                <rect id="Rectangle-4" stroke-width="1.4" x="0.7" y="0.7" width="8.4" height="311.85" rx="2.8"></rect>
+                <polygon id="Polygon" stroke-width="1.05" stroke-linecap="square" transform="translate(4.900000, 316.400000) rotate(-180.000000) translate(-4.900000, -316.400000) " points="4.9 312.2 8.89443737 315.102129 7.36869806 319.797871 2.43130194 319.797871 0.905562632 315.102129"></polygon>
+            </g>
+            <path d="M128.275,111.125 L170.627169,68.7728306" id="Line-3" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <path d="M170.975,68.775 L249.053246,68.775" id="Line-4" stroke="#000000" stroke-width="0.5" stroke-linecap="square"></path>
+            <text id="Makeup-Brushes" font-family="OpenSans, Open Sans" font-size="8.4" font-weight="normal" fill="#000000">
+                <tspan x="177.113672" y="66.4">Makeup Brushes</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
