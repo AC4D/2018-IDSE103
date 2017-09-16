@@ -1,7 +1,6 @@
 <html>
   <body>
     <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <style>
       #nav-bar {
@@ -73,18 +72,16 @@
     </style>
 
     <script>
-      $(function(){
-        $('#calculate').click(function() {
-          carts = parseInt($('#cart-count').val())
-          pushers = parseInt($('#pusher-count').val())
-          temp = parseInt($('#temperature').val())
-          min = carts / pushers
-          if(temp > 85) {
-            min = min * 2
-          }
-          $('#output').text(min + ' min')
-        })
-      })
+      function calculateMin() {
+        carts = parseInt(document.getElementById('cart-count').value)
+        pushers = parseInt(document.getElementById('pusher-count').value)
+        temp = parseInt(document.getElementById('temperature').value)
+        min = carts / pushers
+        if(temp > 85) {
+          min = min * 2
+        }
+        document.getElementById('output').innerHTML = min + ' min'
+      }
     </script>
     <div id="prototype-container">
       <div id="iphone-mask"></div>
@@ -109,7 +106,7 @@
         </div>
 
         <div id="calculate-container">
-          <button id="calculate">Calculate</button>
+          <button id="calculate" onClick="calculateMin()">Calculate</button>
         </div>
 
         <div id="output-container">
