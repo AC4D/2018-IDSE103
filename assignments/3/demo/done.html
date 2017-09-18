@@ -1,140 +1,135 @@
 <html>
   <body>
     <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base.css">
-
-    <style>
-      #nav-bar {
-        font-size: 40px;
-        font-weight: bold;
-        padding-top: 50px;
-        padding-left: 10px;
-        background: #F8F8F8;
-        border-bottom: 1px solid #eee;
-        margin-bottom: 50px;
-        padding-bottom: 10px;
-      }
-
-      #cart-count-container, #pusher-count-container{
-        padding-bottom: 20px;
-      }
-      #temperature-container {
-        margin-bottom: 60px;
-      }
-      #cart-count, #pusher-count, #temperature {
-        width: 75px;
-        height: 75px;
-        text-align: center;
-        font-size: 30px;
-        margin-left: 40px;
-        margin-right: 20px;
-        background: #F8F8F8;
-      }
-
-      #calculate-container {
-        text-align: center;
-      }
-      #calculate {
-        color: white;
-        border: none;
-        width: 50%;
-        font-size: 30px;
-        font-weight: bold;
-        padding: 10px;
-        background: #007AFF;
-        border-radius: 10px;
-        margin-bottom: 60px;
-      }
-      #calculate:hover {
-        background: #007ABB;
-      }
-
-      #output-container {
-        text-align: center;
-      }
-      #output {
-        font-size: 40px;
-        weight: 100;
-      }
-
-
-      #tab-bar {
-        position: absolute;
-        bottom: 0;
-        background: #F8F8F8;
-        padding: 40px 0;
-      }
-      #carts, #bagging, #bathroom, #restock {
-        float: left;
-        width: 100px;
-        text-align: center;
-        line-height: 35px;
-      }
-    </style>
-
-    <script>
-      function calculateMin() {
-        carts = parseInt(document.getElementById('cart-count').value)
-        pushers = parseInt(document.getElementById('pusher-count').value)
-        temp = parseInt(document.getElementById('temperature').value)
-        min = carts / pushers
-        if(temp > 85) {
-          min = min * 2
-        }
-        document.getElementById('output').innerHTML = min + ' min'
-      }
-    </script>
     <div id="prototype-container">
       <div id="iphone-mask"></div>
       <div id="iphone-container">
-        <div id="nav-bar">
+        <style>
+          #navbar {
+            font-size: 40px;
+            padding-top: 50px;
+            background-color: #F8F8F8;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            border-bottom: 1px solid #ddd;
+          }
+
+          #cart-count, #pusher-count, #temperature {
+            font-size: 40px;
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 50px;
+            text-align: center;
+          }
+
+          #calculate {
+            background: #007AFF;
+            padding: 20px;
+            font-size: 40px;
+            color: white;
+            margin-top: 20px;
+            border: 0;
+            display: block;
+            text-align: center;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10;
+            border-radius: 20px;
+          }
+          #calculate:hover {
+            background: #007ABB;
+          }
+
+          #output {
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+          }
+          #output-details {
+            text-align: center;
+          }
+
+          #tab-bar {
+            position: absolute;
+            bottom: 0;
+            background: #F8F8F8;
+            padding: 40px 0;
+            border-top: 1px solid #ddd;
+          }
+          #carts, #bagging, #bathroom, #restock {
+            float: left;
+            width: 100px;
+            text-align: center;
+            line-height: 35px;
+          }
+        </style>
+
+        <!-- Nav Bar -->
+        <div id="navbar">
           Cart Calculator
         </div>
 
-        <div id="cart-count-container">
-          <input type="number" id="cart-count" value="100"></input>
-          Carts to return
-        </div>
+        <!-- Inputs -->
+        <input type="number" id="cart-count" value="100">
+        Number of carts
 
-        <div id="pusher-count-container">
-          <input type="number" id="pusher-count" value="2"></input>
-          Pushers
-        </div>
+        <input type="number" id="pusher-count" value="2">
+        Number of pushers
 
-        <div id="temperature-container">
-          <input type="number" id="temperature" value="75"></input>
-          Outside Temperature °F
-        </div>
+        <input type="number" id="temperature" value="75">
+        Tempature outside F
 
-        <div id="calculate-container">
-          <button id="calculate" onClick="calculateMin()">Calculate</button>
-        </div>
+        <button id="calculate" onClick="calculateTime()">
+          Calculate
+        </button>
 
-        <div id="output-container">
-          <div id="output">? min</div>
+        <!-- Output -->
+        <div id="output">
+          ? mins
+        </div>
+        <div id="output-details">
           estimated pushin' time
         </div>
 
+        <!-- Tab Bar -->
         <div id="tab-bar">
           <div id="carts">
             <img src="star-active.svg"></img><br />
             Carts
           </div>
-
           <div id="bagging">
             <img src="star.svg"></img><br />
             Bagging
           </div>
-
           <div id="bathroom">
             <img src="star.svg"></img><br />
             Bathroom
           </div>
-
           <div id="restock">
             <img src="star.svg"></img><br />
             Restock
           </div>
         </div>
+
+        <script>
+          function calculateTime() {
+            carts = document.getElementById('cart-count').value
+            pushers = document.getElementById('pusher-count').value
+            temperature = document.getElementById('temperature').value
+            result = carts/pushers
+
+            if(temperature > 85) {
+              result = result * 2
+            }
+
+
+            result = result + ' mins'
+
+            document.getElementById('output').innerHTML = result
+          }
+        </script>
       </div>
     </div>
   </body>
