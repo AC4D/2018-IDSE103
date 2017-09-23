@@ -1,0 +1,109 @@
+<html>
+  <body>
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base.css">
+    <div id="prototype-container">
+      <div id="iphone-mask"></div>
+      <div id="iphone-container">
+
+        <!-- Nav Bar -->
+         <div id="navbar">
+         Wedding Beauty Planner
+         </div>
+          <style>
+           #navbar {
+      
+            font-size: 30px;
+            font-style: italic;
+            padding-top: 70px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            background-color: lightpink;
+           }
+
+          #hairstyle-count, #makeup-count, #brushes {
+            font-size: 40px;
+            width: 80px;
+            height: 80px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 20px;
+            text-align: center;
+            }
+
+          #calculate {
+            background-color: purple;
+            width: 100%;
+            padding: 20px;
+            font-size: 40px;
+            color: white;
+            margin-top:40px;
+            }
+
+          #output {
+            font-size: 40px; 
+            font-weight: bold;
+            text-align: center;
+          }  
+
+          #output-details {
+          text-align: center;
+          margin-top: 30px;
+          font-size: 40px;
+          }
+
+          
+          </style>
+
+        <!-- Inputs -->
+          <input type="number" id="hairstyle-count" value="6">
+          Guests that need hairstyle
+
+          <input type="number" id="makeup-count" value="8">
+          Guests that need makeup
+
+          <input type="number" id="brushes" value="2">
+          Sets of brushes
+
+          <button id="calculate" onclick="calculateTime()">
+          Calculate time for services
+          </button>
+
+
+
+
+        <!-- Output -->
+        <div id="output-details">
+          Please allocate 
+        </div>
+        <div id="output">
+        ? mins
+        </div>
+        
+
+        <script>
+        function calculateTime() {
+          hairstyle = parseInt(document.getElementById('hairstyle-count').value)
+          makeup = parseInt(document.getElementById('makeup-count').value)
+          brushes = parseInt(document.getElementById('brushes').value)
+          
+          if(makeup > brushes){
+            result = 50*hairstyle+45*makeup+(makeup-brushes)*10
+          } else {
+            result = 50*hairstyle+45*makeup
+          }
+
+          output = Math.floor(result/60) + ' hours and ' + (result%60) + ' mins' 
+
+          document.getElementById('output').innerHTML=output
+          }
+
+        </script>
+       
+
+
+
+        <!-- Tab Bar -->
+      </div>
+    </div>
+  </body>
+</html>
