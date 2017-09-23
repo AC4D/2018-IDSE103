@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>#3 Assignment - IDSE103</title>
+    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css">
+  </head>
+  <body>
+    <h5>IDSE103 - Assignment #3</h5>
+    <!-- Replace with your name -->
+    <h5>Joshua Browning</h5>
+    <h1>Interface Development</h1>
+
+    <h3>Sketches</h3>
+   
+      <img src="sketch-1.jpg" style="width:45%" />
+      <img src="sketch-2.jpg" style="width:45%" />
+      <img src="sketch-3.jpg" style="width:45%" />
+      <img src="sketch-4.jpg" style="width:45%" />
+
+
+    <h3>Mockups</h3>
+
+      <img src="mockup-1.png" style="width:45%" />
+      <img src="mockup-2.png" style="width:45%" />
+      <img src="mockup-3.png" style="width:45%" />
+      <img src="mockup-4.png" style="width:45%" />
+ 
+    <!--  HTML Prototype -->
+    <h3>Prototype</h3>
+    <div id="prototype-container">
+      <div id="iphone-mask"></div>
+      <div id="iphone-container">
+
+        <!-- Nav Bar -->
+        <!-- Nav Bar -->
+        <div id="navbar">
+          Tile Calculator
+        </div>
+        <style>
+          #navbar {
+          
+            font-family: "Verdana", Verdana, Serif;
+            color:white;
+            font-size: 30px; 
+            padding-top:50px;
+            padding-bottom:20px;
+            background-color: #00a1c1;
+            padding-left: 95px;
+          }
+
+          #square-area, #square-tile, #people{
+            font-size: 40px;
+            width: 150px;
+            height: 100px;
+            margin-top: 50px;
+            margin-left: 30px;
+            text-align: center;
+             font-family: "Verdana", Verdana, Serif;
+
+          }
+
+          #calculate {
+         
+              width: 80%;
+             
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 60px 37px;
+              cursor: pointer;
+              border-radius:8px;
+
+          }
+  
+          #calculate{
+          background-color: #00a1c1; 
+          color: #white; 
+
+        }
+
+          #calculate:hover {
+          background-color: #2e2e2e;
+          color: white;
+
+          }
+
+          
+
+          #output {
+            margin-top: 0px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+             font-family: "Verdana", Verdana, Serif;
+          }
+          #output-details {
+            text-align: center;
+          }
+        </style>
+
+
+
+        <!-- Inputs -->
+
+               <input type="number" id="square-area" value="?"> Square Feet of Area 
+
+        <input type="number" id="square-tile" value="?"> Square Feet of Each Tile
+
+        <input type="number" id="people" value="?"> Number of People 
+
+        <button id="calculate" onClick="calculateTime()">
+        Calculate
+      </button>
+
+
+
+        <!-- Output -->
+
+                <div id="output">
+        ? mins 
+      </div>
+      <div id="output-details">
+        estimated job time 
+      </div>
+
+      <script>
+        function calculateTime() {
+        area = document.getElementById('square-area').value
+        tile = document.getElementById('square-tile').value
+        people = document.getElementById('people').value
+        result = area/tile
+        
+        if(people < 2) {
+          result = result * 2
+        }
+
+          if(people > 4) {
+          result = result / 2
+        }
+
+        result = result + ' mins'
+
+        document.getElementById('output').innerHTML = result
+      
+      }
+
+       </script>
+
+        <!-- Tab Bar -->
+      </div>
+    </div>
+  </body>
