@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <title>#3 Assignment - IDSE103</title>
+    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css">
+  </head>
+  <body>
+    <h5>IDSE103 - Assignment #3</h5>
+    <!-- Replace with your name -->
+    <h5>Nicole Nagel</h5>
+    <h1>Interface Development</h1>
+
+    <h3>Sketches</h3>
+    Coming soon.
+    <!--
+      Insert your sketches here, something like:
+      <img src="sketch-1.jpg" style="width:45%" />
+      <img src="sketch-2.jpg" style="width:45%" />
+      <img src="sketch-3.jpg" style="width:45%" />
+      <img src="sketch-4.jpg" style="width:45%" />
+    -->
+
+    <h3>Mockups</h3>
+    <img src="Flawless_Fit.png" style="width:45%" />
+    <img src="Bra_Tracker.png" style="width:45%" />
+    <!--
+      Insert your mockups here, something like:
+      <img src="mockup-1.png" style="width:45%" />
+      <img src="mockup-2.png" style="width:45%" />
+      <img src="mockup-3.png" style="width:45%" />
+      <img src="mockup-4.png" style="width:45%" />
+    -->
+
+    <!--  HTML Prototype -->
+    <h3>Prototype</h3>
+    <html>
+  <body>
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base.css"> 
+
+    <div id="prototype-container">
+      <div id="iphone-mask"></div>
+      <div id="iphone-container">
+
+
+        <!-- Nav Bar -->
+        <div id="navbar">
+          Flawless Fit
+        </div>
+        <style>
+          #navbar {
+            font-size: 40px;
+            font-color: #ff2d55; 
+            font-weight: bold;
+            padding-top: 100px;
+            padding-left: 20px;
+            background-color: white;
+          }
+
+          #side-bust-inches, #front-bust-inches, #back-inches {
+            font-size: 40px;
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            margin-left: 50px;
+            font-color: #ff2d55; 
+            text-align: center;
+
+          }
+
+            #calculate {
+              background-color: #ff2d55;
+              width: 100%;
+              padding: 30px;
+              font-size: 40px;
+              color: white;
+              margin-top: 30px;
+            }
+
+           #output {
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+
+          }
+
+          #output-details {
+            text-align: center;
+          }
+
+        </style>
+
+        <!-- Inputs -->
+        <input type="number" id="side-bust-inches" value="12">
+        <!-- input is special in that you don't have to close it. Value adds a default value -->
+        inches - Side Bust
+
+        <input type="number" id="front-bust-inches" value="14">
+        inches - Front Bust
+
+        <input type="number" id="back-inches" value="12">
+        inches - Back
+
+        <button id="calculate" onClick="calculateSize()">Calculate Fit </button>
+        <!--onClick is a function to make the calculation happen once you click your button (vs. the pop-up window in the browser. calculateTime() is a made up function name. Define that function in teh script.)-->
+
+        <!-- Output -->
+        <div id="output">
+         ? size
+        </div>
+
+       <div id="output-details">
+       Visit a store to test your size!
+      </div>
+
+<script> 
+  function calculateSize() {
+  side-bust = document.getElementById('side-bust-inches').value
+  front-bust = document.getElementById('front-bust-inches').value
+  back = document.getElementById('back-inches').value
+    
+    function band-size() { front-bust + back + (side-bust/2)
+    }
+    var band-size-calc = band-size();
+    
+    function bust-size() { (side-bust*2) + front-bust
+    }
+    var bust-size-calc = bust-size();
+    
+    function cup-size() { bust-size - band-size
+    }
+    var cup-size-calc = cup-size();
+  
+    if(cup-size-calc=1){
+    cup-letter = 'A'
+    }
+    if(cup-size-calc=2){
+    cup-letter= 'B'
+    }
+    if(cup-size-calc=3){
+    cup-letter  = 'C'
+    }
+    if (cup-size-calc =4){
+    cup-letter = 'D'
+    }
+    if(cup-size-calc =5){
+    cup-letter = 'DD'
+    }
+    if(cup-size-calc=6){
+    cup-letter= 'E'
+    }
+    if(cup-size-calc=7){
+    cup-letter= 'F'
+    }
+    if(cup-size-calc=8){
+    cup-letter= 'G'
+    }
+    if((band-size-calc%2)=1){
+    band-size-calc= band-size-calc - 1
+    }
+  result = band-size-calc '' cup-letter
+  
+
+  document.getElementById('output').innerHTML = result
+  
+}
+</script>
+
+
+        <!-- Nav Bar -->
+
+        <!-- Inputs -->
+
+        <!-- Output -->
+
+        <!-- Tab Bar -->
+      </div>
+    </div>
+  </body>
+</html>
