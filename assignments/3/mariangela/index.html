@@ -87,14 +87,13 @@
 
         worker=document.getElementById('worker-count').value
         wage=document.getElementById('wage-per-worker').value
-        visits=document.getElementById('supervision-visits').value
+        visits=document.getElementById('number-of-visits').value
 
         result=visits*worker*wage
       
         if (worker <2) {
         result= result * 2
 }
-
         result=result + 'mins'
 
         document.getElementById('output').innerHTML = result
@@ -114,32 +113,6 @@
     padding-left: 20px;
   }
 
-         <ul>
-  <li><a name="Game Picker">Games</a></li>
-  <li><a name="Friend Chooser">Friends</a></li>
-  <li><a name="Pizza Calculator">Pizza</a></li>
-  <li><a name="Emergency Contacts">Emergency</a></li>
-  <li><a name="Settings">Settings</a></li>
-</ul>
-<style>
-li {
-    display: inline;
-    }
-ul {
-    list-style-type: none;
-    margin: 5;
-    padding: 0;
-    border: 10px solid #e7e7e7;
-    Color: Black;
-    background-color: #e7e7e7;
-}
-li {
-    border-right: 1px solid #bbb;
-    padding: 5px;
-}
-li:last-child {
-    border-right: none;
-    padding: 5px
     </div>
   </body>
 </html>
