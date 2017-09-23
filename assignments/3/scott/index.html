@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>#3 Assignment - IDSE103</title>
+    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css" media="all" rel="stylesheet">
+  </head>
+  <body>
+      <h5>IDSE103 - Assignment #3</h5>
+      <h5>Scott Reed</h5>
+      <h1>Interface Development</h1>
+
+      <h3>Sketches</h3>
+        <img src="sketch-1.jpg" style="width: 45%" />
+        <img src="sketch-2.jpg" style="width: 45%" />
+        <img src="sketch-3.jpg" style="width: 45%" />
+        <img src="sketch-4.jpg" style="width: 45%" />
+
+      <h3>Mockups</h3>
+        <img src="mockup-1.png" style="width: 45%" />
+        <img src="mockup-2.png" style="width: 45%" />
+        <img src="mockup-3.png" style="width: 45%" />
+        <img src="mockup-4.png" style="width: 45%" />
+
+      <h3>Prototype</h3>
+      <div id="prototype-container">
+        <div id="iphone-mask"></div>
+        <div id="iphone-container">
+
+        <style>
+          #navbar {
+            font-size: 18px;
+            color: white;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            background-color: lightgreen;
+            padding-left: 20px;
+            }
+            #dimmer-switch, #outlets, #usb {
+              font-size: 35px;
+              width: 100px;
+              height: 100px;
+              margin-top: 50px;
+              margin-left: 50px;
+              text-align: center;
+
+            }
+
+            #calculate {
+              background-color: lightgreen;
+              width: 100%;
+              padding: 20px;
+              font-size: 16px;
+              color: white;
+              width: 100%;
+              margin-top: 20px;
+            }
+
+            #output {
+              margin-top: 20px;
+              font-size: 40px;
+              font-weight: bold;
+              text-align: center;
+            }
+
+            #output-details {
+              text-align: center;
+              }
+
+            </style>
+
+        <div id="navbar">
+        Cost for common installations
+        </div>
+
+        <!-- Inputs -->
+        <input type="number" id="dimmer-switch" value="10"  min="0" max="10"> Number of dimmer switches
+
+        <input type="number" id="outlets" value="10" min="0" max="10"> Number of outlets
+
+        <input type="number" id="usb" value="10" min="0" max="10">
+        Number of USB outlets
+
+        <button id="calculate" onClick="calculateTime()"> Calculate
+        </button>
+
+        <!-- Output -->
+        <div id="output">
+            $0
+            </div>
+            <div id="output-details">
+              $ estimated cost with Handy Edison
+            </div>
+
+        <script>
+          function calculateTime() {
+          dimmer = document.getElementById('dimmer-switch').value*50;
+         outlets = document.getElementById('outlets').value*40;
+          usb = document.getElementById('usb').value*45
+         result = dimmer + outlets + usb;
+document.getElementById('output').innerHTML = result;
+
+          }
+
+ //         result = result
+          
+        </script>
+
+        <!-- Tab Bar -->
+      </div>
+    </div>
+  </body>
+</html>
