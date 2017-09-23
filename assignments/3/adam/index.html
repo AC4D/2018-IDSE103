@@ -1,0 +1,198 @@
+ <html>
+  <head>
+    <title>#3 Assignment - IDSE103</title>
+    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css">
+  </head>
+  <body>
+    <h5>IDSE103 - Assignment #3</h5>
+    <!-- Replace with your name -->
+    <h5>Adam Chasen</h5>
+    <h1>Interface Development</h1>
+
+    <h3>Sketches</h3>
+    <!--
+      Insert your sketches here, something like:
+      <img src="sketch-1.jpg" style="width:45%" />
+      <img src="sketch-2.jpg" style="width:45%" />
+      <img src="sketch-3.jpg" style="width:45%" />
+      <img src="sketch-4.jpg" style="width:45%" />
+    -->
+    <img src="Sketch1.jpg" style="width:45%" />
+    <img src="Sketch2.jpg" style="width:45%" />
+
+    <h3>Mockups</h3>
+    <!--
+      Insert your mockups here, something like:
+      <img src="mockup-1.png" style="width:45%" />
+      <img src="mockup-2.png" style="width:45%" />
+      <img src="mockup-3.png" style="width:45%" />
+      <img src="mockup-4.png" style="width:45%" />
+    -->
+     <img src="Things to do.png" style="width:45%" />
+      <img src="Wage Calculator.png" style="width:45%" />
+      <img src="Scheduler.png" style="width:45%" />
+      <img src="Invoice.png" style="width:45%" />
+<!--  HTML Prototype -->
+    <h3>Prototype</h3>
+    <div id="prototype-container">
+      <div id="iphone-mask"></div>
+      <div id="iphone-container">
+       
+
+        <!-- Nav Bar -->
+        <div id = "navbar">
+           </div>
+           <div id = "heading">
+         <span style="color:#9c4dcc; font-family: Helvetica; font-size: 16"> <</span> <span style="color: white; font-family:Helvetica; font-size: 16">Babysittify </span>  
+         <p style="color:white; font-family: Helvetica; font-size: 20">My Wage Calculator</p>
+       </div>
+       <img src="http://oi65.tinypic.com/kchych.jpg" border="0" height="" width ="412">
+       
+        <style>
+        
+        div #navbar {
+          font-size: 40px;
+          padding-top: 20px;
+          font-family: "Helvetica";
+          color: white;
+          background-color: #38006b;
+          padding-bottom: 10px;
+          padding-left: 20px;
+        }
+        div #heading {
+          padding-top: 5px;
+          font-family: white;
+          background-color: #6a1b9a;
+          padding-bottom: 10px;
+
+          
+        }
+
+
+        #miles-count {
+          margin-left: 45px;
+         
+          font-size: 20px;
+          width: 100px;
+          height: 40px;
+         text-align: center;
+
+        }
+
+      #avghours-count {
+          margin-left: 250px;
+         
+          font-size: 20px;
+          width: 100px;
+          height: 40px;
+         text-align: center;
+
+        }
+        #responsibility-count, #experience-count, #hours-count {
+          margin-left: 10px;
+          width: 300px;}
+
+        #calculate {
+          background-color: blue;
+          width: 100%;
+          padding: 20px;
+          font-size: 40px;
+          color: white;
+          margin-top: 20px;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+          float:right;
+        }
+
+        #output {
+          margin-top: 20px;
+          font-size: 40px;
+          font-weight: bold;
+          text-align: center;
+        }
+        #output-details {
+          text-align: center;
+        }
+
+      </style>
+
+        <!-- Inputs -->
+        <p style="color:38006b; font-family: Helvetica; font-size:20">  My travel time to Jane
+         <input type = "number" id = "miles-count" value="30">min</p>
+
+       <p style="color:38006b; font-family: Helvetica; font-size:20"> Expected level of responsibility</p>
+
+       <div>
+        <div class="left"><span style="color:38006b; font-family: Helvetica; font-size:16">Low</span></div>
+        <div class="right"><span style="color:38006b; font-family: Helvetica; font-size:16">High</span></div>
+      </div>
+        <p> <input type = "range" id = "responsibility-count" min="1" max="10"></p>
+
+      <p style="color:38006b; font-family: Helvetica; font-size:20"> Level of experience</p>
+      <div>
+        <div class="left"><span style="color:38006b; font-family: Helvetica; font-size:16">Low</span></div>
+        <div class="right"><span style="color:38006b; font-family: Helvetica; font-size:16">High</span></div>
+      </div>
+
+        <p> <input type = "range" id = "experience-count" min="1" max="10"></p>
+        <p style="color:38006b; font-family: Helvetica; font-size:20;">  Average hours per week working for Jane
+         <input type = "number" id = "avghours-count" value="0">hrs</p>
+
+        
+
+        <button  id = "calculate" onClick="calculateWage()">Calculate</button>
+        
+
+        <!-- Output -->
+    
+        <div id="output">
+          ? 
+        </div>
+        <div id = "output-details">
+          What I should charge
+        
+      </div>
+      <script>
+    
+
+         function calculateWage(){
+          var distance
+          var responsibility
+          var experience
+          var hours
+          distance = document.getElementById('miles-count').value
+          responsibility = document.getElementById('responsibility-count').value
+          experience = document.getElementById('experience-count').value
+          hours = document.getElementById('avghours-count').value
+          
+          result = 5
+         
+         if (distance > 30 ) {result = result + 1;}
+          if (responsibility>=8) {result = result + 2;}
+           else if (responsibility>=5) {result = result + 1;}
+
+          if (experience>=8) {result = result + 2;}
+           else if (experience>=5) {result = result + 1;}
+
+            if (hours>=10) {result = result + 1;}
+          
+
+
+
+          result = '$' + result + ' per hour';
+       
+        document.getElementById('output').innerHTML = result}
+        
+       
+        
+      </script>
+
+        <!-- Tab Bar -->
+      </div>
+    </div>
+  </body>
+</html>
