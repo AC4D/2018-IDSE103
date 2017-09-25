@@ -1,8 +1,6 @@
 <html>
   <head>
     <title>#3 Assignment - IDSE103</title>
-    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css">
   </head>
   <body>
     <h5>IDSE103 - Assignment #3</h5>
@@ -11,7 +9,8 @@
     <h1>Interface Development</h1>
 
     <h3>Sketches</h3>
-    Coming soon.
+    <img src="sketch-1.jpg" style="width:45%" />
+    <img src="sketch-2.jpg" style="width:45%" />
     <!--
       Insert your sketches here, something like:
       <img src="sketch-1.jpg" style="width:45%" />
@@ -21,8 +20,9 @@
     -->
 
     <h3>Mockups</h3>
-    <img src="Flawless_Fit.png" style="width:45%" />
-    <img src="Bra_Tracker.png" style="width:45%" />
+    <img src="Flawless_Fit_Final.png" style="width:45%" />
+    <img src="Bra_Tracker_Final.png" style="width:45%" />
+    <img src="Customizer_Final.png" style="width:45%" />
     <!--
       Insert your mockups here, something like:
       <img src="mockup-1.png" style="width:45%" />
@@ -33,26 +33,31 @@
 
     <!--  HTML Prototype -->
     <h3>Prototype</h3>
-    <html>
+ 
+<html>
   <body>
-    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base.css"> 
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base.css">
 
     <div id="prototype-container">
       <div id="iphone-mask"></div>
       <div id="iphone-container">
 
 
+
         <!-- Nav Bar -->
         <div id="navbar">
           Flawless Fit
         </div>
+
         <style>
+
+
           #navbar {
             font-size: 40px;
-            font-color: #ff2d55; 
+            color: #4A4A4A; 
             font-weight: bold;
             padding-top: 100px;
-            padding-left: 20px;
+            padding-left: 25px;
             background-color: white;
           }
 
@@ -62,7 +67,7 @@
             height: 100px;
             margin-top: 50px;
             margin-left: 50px;
-            font-color: #ff2d55; 
+            color: #ff2d55; 
             text-align: center;
 
           }
@@ -81,6 +86,7 @@
             font-size: 40px;
             font-weight: bold;
             text-align: center;
+            color: #4A4A4A;
 
           }
 
@@ -95,7 +101,7 @@
         <!-- input is special in that you don't have to close it. Value adds a default value -->
         inches - Side Bust
 
-        <input type="number" id="front-bust-inches" value="14">
+        <input type="number" id="front-bust-inches" value="12">
         inches - Front Bust
 
         <input type="number" id="back-inches" value="12">
@@ -115,50 +121,61 @@
 
 <script> 
   function calculateSize() {
-  side-bust = document.getElementById('side-bust-inches').value
-  front-bust = document.getElementById('front-bust-inches').value
-  back = document.getElementById('back-inches').value
+  side_bust = parseInt(document.getElementById('side-bust-inches').value)
+  front_bust = parseInt(document.getElementById('front-bust-inches').value)
+  back = parseInt(document.getElementById('back-inches').value)
     
-    function band-size() { front-bust + back + (side-bust/2)
-    }
-    var band-size-calc = band-size();
-    
-    function bust-size() { (side-bust*2) + front-bust
-    }
-    var bust-size-calc = bust-size();
-    
-    function cup-size() { bust-size - band-size
-    }
-    var cup-size-calc = cup-size();
+    band_size =  front_bust + back + (side_bust/2)
   
-    if(cup-size-calc=1){
-    cup-letter = 'A'
+    
+    bust_size = (side_bust*2) + front_bust
+    
+    
+    cup_size_calc = bust_size - band_size
+
+    cup_letter='';
+
+    console.log('cup_size_calc=' + cup_size_calc)
+  
+    if(cup_size_calc==0){
+    cup_letter = 'AA'
     }
-    if(cup-size-calc=2){
-    cup-letter= 'B'
+    if(cup_size_calc==1){
+    cup_letter = 'A'
     }
-    if(cup-size-calc=3){
-    cup-letter  = 'C'
+    if(cup_size_calc==2){
+    cup_letter= 'B'
     }
-    if (cup-size-calc =4){
-    cup-letter = 'D'
+    if(cup_size_calc==3){
+    cup_letter  = 'C'
     }
-    if(cup-size-calc =5){
-    cup-letter = 'DD'
+    if (cup_size_calc ==4){
+    cup_letter = 'D'
     }
-    if(cup-size-calc=6){
-    cup-letter= 'E'
+    if(cup_size_calc ==5){
+    cup_letter = 'DD'
     }
-    if(cup-size-calc=7){
-    cup-letter= 'F'
+    if(cup_size_calc==6){
+    cup_letter= 'E'
     }
-    if(cup-size-calc=8){
-    cup-letter= 'G'
+    if(cup_size_calc==7){
+    cup_letter= 'F'
     }
-    if((band-size-calc%2)=1){
-    band-size-calc= band-size-calc - 1
+    if(cup_size_calc==8){
+    cup_letter= 'G'
     }
-  result = band-size-calc '' cup-letter
+    if((band_size%2)==1){
+    band_size = band_size - 1
+    }
+    if((band_size%2)==1.5){
+      band_size = band_size + 0.5
+    }
+    if((band_size%2)==0.5){
+      band_size = band_size - 0.5
+    }
+
+
+  result = band_size + '-' + cup_letter
   
 
   document.getElementById('output').innerHTML = result
@@ -166,12 +183,14 @@
 }
 </script>
 
+<!--Script notes:
+assign a variable name - here, carts
+document refers to the whole html document
+Get element by ID and grab attribute's value 
+alert (carts) makes a window pop up in the browser with the number of carts input
 
-        <!-- Nav Bar -->
-
-        <!-- Inputs -->
-
-        <!-- Output -->
+.innerHTML grabs whatever is between that designated div - here "? mins", and reassigning it to result (changed from carts/pushers to "result" to add the string "mins" to the result)
+-->
 
         <!-- Tab Bar -->
       </div>
