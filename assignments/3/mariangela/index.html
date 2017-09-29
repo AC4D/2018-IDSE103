@@ -108,20 +108,18 @@
 
         worker=document.getElementById('worker-count').value
         wage=document.getElementById('wage-per-worker').value
-        visits=document.getElementById('supervision-visits').value
+        visits=document.getElementById('number-of-visits').value
 
         result=visits*worker*wage
       
         if (worker <2) {
         result= result * 2
 }
-
         result=result + 'mins'
 
         document.getElementById('output').innerHTML = result
 }
 
-      }
       </script>
 
         <!-- Tab Bar -->
