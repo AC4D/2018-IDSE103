@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <title>#3 Assignment - IDSE103</title>
+    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
+    <link href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css" media="all" rel="stylesheet">
+  </head>
+  <body>
+    <h5>IDSE103 - Assignment #3</h5>
+    <!-- Replace with your name -->
+    <h5>Your Name</h5>
+    <h1>Interface Development</h1>
+
+    <h3>Sketches</h3>
+    <!--
+      Insert your sketches here, something like:
+      <img src="sketch-1.jpg" style="width:100%" />
+      <img src="sketch-2.jpg" style="width:100%" />
+      <img src="sketch-3.jpg" style="width:100%" />
+      <img src="sketch-4.jpg" style="width:100%" />
+    -->
+    <img src="sketch-1.jpg" style="width:45%" />
+      <img src="sketch-2.jpg" style="width:45%" />
+      <img src="sketch-3.jpg" style="width:45%" />
+      <img src="sketch-4.jpg" style="width:45%" />
+
+    <h3>Mockups</h3>
+    <!--
+      Insert your mockups here, something like:
+      <img src="mockup-1.png" style="width:100%" />
+      <img src="mockup-2.png" style="width:100%" />
+      <img src="mockup-3.png" style="width:100%" />
+      <img src="mockup-4.png" style="width:100%" />
+    -->
+    <img src="mockup-1.png" style="width:45%" />
+      <img src="mockup-2.png" style="width:45%" />
+      <img src="mockup-3.png" style="width:45%" />
+      <img src="mockup-4.png" style="width:45%" />
+
+    <!--  Here's your HTML Prototype -->
+    <h3>Prototype</h3>
+    <div id="prototype-container">
+      <div id="iphone-mask"></div>
+      <div id="iphone-container">
+
+      <style>
+        #navbar {
+          font-size: 40px;
+          padding-top: 50px;
+          background-color: #F8F8F8;
+          padding-bottom: 20px;
+          padding-left: 20px;
+          border-bottom: 1px solid #ddd;
+        }
+
+        #cart-count, #pusher-count, #temperature {
+          font-size: 40px;
+          width: 100px;
+          height: 100px;
+          margin-top: 30px;
+          margin-left: 50px;
+          text-align: center;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          margin-right: 10px;
+        }
+
+        #calculate {
+          background: white;
+          padding: 10px;
+          font-size: 30px;
+          color: #007AFF;
+          margin-top: 20px;
+          border: 1px solid #007AFF;
+          display: block;
+          text-align: center;
+          width: 80%;
+          margin-left: 10%;
+          margin-right: 10%;
+          border-radius: 20px;
+        }
+        #calculate:hover {
+          color: white;
+          background: #007AFF;
+        }
+
+        #output {
+          margin-top: 20px;
+          font-size: 40px;
+          font-weight: bold;
+          text-align: center;
+        }
+        #output-details {
+          text-align: center;
+        }
+
+        #tab-bar {
+          position: absolute;
+          bottom: 0;
+          background: #F8F8F8;
+          padding: 25px 0;
+          border-top: 1px solid #ddd;
+        }
+        #carts, #bagging, #bathroom, #restock {
+          float: left;
+          width: 100px;
+          text-align: center;
+          line-height: 35px;
+        }
+      </style>
+
+      <!-- Nav Bar -->
+      <div id="navbar">
+        Cart Calculator
+      </div>
+
+      <!-- Inputs -->
+      <input type="number" id="cart-count" value="100">
+      Number of carts
+
+      <input type="number" id="pusher-count" value="2">
+      Number of pushers
+
+      <input type="number" id="temperature" value="75">
+      Tempature outside F
+
+      <button id="calculate" onClick="calculateTime()">
+        Calculate
+      </button>
+
+      <!-- Output -->
+      <div id="output">
+        ? mins
+      </div>
+      <div id="output-details">
+        estimated pushin' time
+      </div>
+
+      <!-- Tab Bar -->
+      <div id="tab-bar">
+        <div id="carts">
+          <img src="star-active.svg"></img><br />
+          Carts
+        </div>
+        <div id="bagging">
+          <img src="star.svg"></img><br />
+          Bagging
+        </div>
+        <div id="bathroom">
+          <img src="star.svg"></img><br />
+          Bathroom
+        </div>
+        <div id="restock">
+          <img src="star.svg"></img><br />
+          Restock
+        </div>
+      </div>
+
+      <script>
+        function calculateTime() {
+          carts = document.getElementById('cart-count').value
+          pushers = document.getElementById('pusher-count').value
+          result = carts/pushers
+
+          temperature = document.getElementById('temperature').value
+          if(temperature > 85) {
+            result = result * 2
+          }
+
+          // remove any decimals
+          result = parseInt(result)
+
+          result = result + ' mins'
+          document.getElementById('output').innerHTML = result
+        }
+      </script>
+      </div>
+    </div>
+  </body>
+</html>
