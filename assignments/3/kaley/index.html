@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <title>#3 Assignment - IDSE103</title>
+    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css">
+  </head>
+  <body>
+    <h5>IDSE103 - Assignment #3</h5>
+    <!-- Replace with your name -->
+    <h5>Kaley</h5>
+    <h1>Interface Development</h1>
+
+     
+    <h3>Sketches</h3>
+   
+      <img src="Friend Chooser Sketch.png" style="width:45%" />
+      <img src="Game Picker Sketch.png" style="width:45%" />
+      <img src="Pizza Calculator Sketch.png" style="width:45%" />
+      <img src="Emergency Contacts Sketch.png" style="width:45%" />
+ 
+
+    <h3>Mockups</h3>
+    
+      <img src="Friend Chooser.png" style="width:45%" />
+      <img src="Game Picker.png" style="width:45%" />
+      <img src="Pizza Calculator.png" style="width:45%" />
+      <img src="emergency contact.png" style="width:45%" />
+
+  
+    <!--  HTML Prototype -->
+    <h3>Prototype</h3>
+ 
+    
+    <div id="prototype-container">
+      <div id="iphone-mask"></div>
+      <div id="iphone-container">
+
+
+        <!-- Nav Bar -->
+        <div id="navbar">
+          Slumber Party Prep
+        </div>
+
+        <div id="title">
+        How Many Pizzas Should You Order?
+      </div>
+
+        <style>
+        #title {
+          font-size: 20px;
+          text-align: center;
+          padding-top: 10px;
+        }
+
+        #navbar {
+          font-size: 40px;
+          padding-top: 50px; 
+          padding-bottom: 20px;
+          background-color: lightgray;
+          padding-left: 20px;
+        }
+
+        #People-count {
+          font-size: 30px;
+          width: 100px;
+          height: 100px;
+          margin-top: 30px;
+          margin-left: 50px;
+          text-align: right;
+
+        }
+
+          #type-of-crust, #hunger {
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+          }
+          
+        
+        #calculate {
+          background-color: lightblue;
+          width: 100%;
+   
+                    font-size: 40px;
+          color: white;
+         
+        }
+        #output {
+          font-size: 30px;
+          font-weight: bold;
+          text-align: left;
+          text-align: center;
+        }
+        #output-details {
+          text-align: center;
+          font-size: 40px;
+        }
+
+
+        
+      </style>
+
+
+        <!-- Inputs -->
+    Number of people: 
+        <input type="number" id="People-count" value="1">
+        <br>
+   
+Type of Crust:
+        <select id="type-of-crust">
+          <option value="0">Choose</option>
+          <option value="1">Thick</option>
+          <option value="2">Thin</option>
+        </select>
+<br>
+  How hungry are you?
+      <select id="hunger">
+          <option value="0">Not at all</option>
+          <option value="1">Somewhat</option>
+          <option value="2">Super hungry</option>
+        </select>
+        <br>
+               <button id="calculate" onClick="calculatePizzas()">
+        Calculate
+      </button>
+
+        <!-- Output -->
+        <div id="output-details">
+        Number of Pizzas:
+      </div>
+      <div id="output">? 
+      </div>
+
+      
+     
+
+       <script>
+        function calculatePizzas() {
+        people = document.getElementById('People-count').value
+        crust = document.getElementById('type-of-crust').value
+        hunger = document.getElementById('hunger').value
+        result = people * crust
+
+        if (hunger < 1) {
+          result = 0
+        }
+
+        if (hunger > 1) {
+          result = result*1.5
+        }
+        if (crust < 1) {
+          result = result/2
+        }
+
+        
+
+       document.getElementById('output').innerHTML = result}
+
+
+        </script> 
+        
+
+
+        <!-- Tab Bar -->
+        <ul>
+  <li><a name="Game Picker">Games</a></li>
+  <li><a name="Friend Chooser">Friends</a></li>
+  <li><a name="Pizza Calculator">Pizza</a></li>
+  <li><a name="Emergency Contacts">Emergency</a></li>
+  <li><a name="Settings">Settings</a></li>
+</ul>
+<style>
+li {
+    display: inline;
+    }
+ul {
+    list-style-type: none;
+    margin: 5;
+    padding: 0;
+    border: 10px solid #e7e7e7;
+
+    Color: Black;
+    background-color: #e7e7e7;
+}
+li {
+    border-right: 1px solid #bbb;
+    padding: 5px;
+}
+
+li:last-child {
+    border-right: none;
+    padding: 5px;
+}
+
+
+</style>
+        
+      </div>
+    </div>
+  </body>
+</html>
