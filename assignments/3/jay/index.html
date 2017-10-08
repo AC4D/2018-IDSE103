@@ -1,0 +1,314 @@
+<html>
+  <head>
+    <title>#3 Assignment - IDSE103</title>
+    <link href="https://ac4d.github.io/2018-IDSE103/assets/reboot.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base-v2.css">
+  </head>
+  <body>
+    <h5>IDSE103 - Assignment #3</h5>
+    <!-- Replace with your name -->
+    <h5>Your Name</h5>
+    <h1>Interface Development</h1>
+
+    <h3>Sketches</h3>
+    <!--
+      Insert your sketches here, something like:
+      <img src="Bartending-Certification-Sketch" style="width:45%" />
+      <img src="Employee-Feedback-Sketch" style="width:45%" />
+      <img src="Regular's-Preferences-Sketch" style="width:45%" />
+      <img src="Tip-Out-Sketch.jpg" style="width:45%" />
+    -->
+
+      <img src="Bartending-Certification-Sketch" style="width:45%" />
+      <img src="Employee-Feedback-Sketch" style="width:45%" />
+      <img src="Regular's-Preferences-Sketch" style="width:45%" />
+      <img src="Tip-Out-Sketch.jpg" style="width:45%" />
+
+    <h3>Mockups</h3>
+    <!--
+      Insert your mockups here, something like:
+      <img src="Certification-Status-Screen.png" style="width:45%" />
+      <img src="Employee-Feedback-Screen.png" style="width:45%" />
+      <img src="Regular's-Preferences-Screen.png" style="width:45%" />
+      <img src="Tip-Out-Calculator-Screen.png" style="width:45%" />
+    -->
+   
+      <img src="Certification-Status-Screen.png" style="width:45%" />
+      <img src="Employee-Feedback-Screen.png" style="width:45%" />
+      <img src="Regular's-Preferences-Screen.png" style="width:45%" />
+      <img src="Tip-Out-Calculator-Screen.png" style="width:45%" />
+
+ <h3>Prototype</h3>
+  <body>
+    <link rel="stylesheet" type="text/css" href="https://ac4d.github.io/2018-IDSE103/assignments/3/demo/base.css">
+    <div id="prototype-container">
+      <div id="iphone-mask"></div>
+      <div id="iphone-container">
+
+
+        <!-- Nav Bar -->
+        <div id="navbar">
+          Tip-Out Calculator
+          
+          <div id="hamburger-menu">
+            
+            <div id="bar1">
+            </div>
+            
+            <div id="bar2">
+            </div>
+            
+            <div id="bar3">
+            </div>
+
+          </div>
+            
+            <div id="invisible-float">
+            
+            <div id="bar4">
+            </div>
+            
+          </div>
+
+        </div>
+
+
+        <div id="inputs">
+          Determine how much tip money you should have remaining after tipping out your co-workers
+        </div>
+
+        <style>
+
+          #hamburger-menu {
+
+            float: left;
+
+          }
+
+          #bar1 {
+
+            width: 22px;
+            height: 2px;
+            background-color: #FFFFFF;
+            margin: 2px 0;
+
+          }
+
+          #bar2 {
+
+            width: 22px;
+            height: 2px;
+            background-color: #FFFFFF;
+            margin: 2px 0;
+
+          }
+
+          #bar3 {
+
+            width: 22px;
+            height: 2px;
+            background-color: #FFFFFF;
+            margin: 2px 0;
+
+          }
+
+          #invisible-float {
+
+            float: right;
+
+          }
+
+          #bar4 {
+            
+            width: 22px;
+            height: 1.5px;
+            background-color: #005DC3;
+            margin: 2px 0;
+
+          }
+
+          #navbar {
+           
+            font-size:  17px;
+            padding-top: 57px;
+            background-color: #005DC3;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: center;
+            color: #FFFFFF;
+          
+          }
+
+           #inputs {
+
+            font-size:  13px;
+            padding-top: 17px;
+            background-color: #EFEFF4;
+            padding-bottom: 30px;
+            padding-right: 17px;
+            padding-left: 17px;
+            text-align: left;
+            color: #6D6D72;
+            font-style: italic;          
+
+          }
+
+          #Total-tips, #Total-bussers, #Total-cooks {
+
+            font-size:  13px;
+            padding-top: 16px;
+            background-color: #EFEFF4;
+            padding-bottom: 10px;
+            padding-right: 17px;
+            padding-left: 17px;
+            text-align: left;
+            color: #6D6D72; 
+
+          }
+
+          #Spacing {
+
+            background-color: #EFEFF4;
+            height: 44px;
+            margin: 0px;
+
+          }
+
+          #cell-divider1, #cell-divider2, #cell-divider3, #cell-divider4, #cell-divider5, #cell-divider6 {
+
+            margin-top: 0px;
+            margin-bottom: 0px;
+            size: 1px;
+
+          }
+
+          #tips-input, #bussers-input, #cooks-input {
+
+            color: #FFFFFF;
+            margin-bottom: 0px;
+            margin-top: 0px;
+
+          }
+
+          #tip-count, #busser-count, #cook-count {
+
+            font-size: 13px;
+            width: 403px;
+            height: 44px;
+            margin-top: 0px;
+            margin-left: 0px;
+            text-align: left;
+            border: none;
+            padding-left: 17pt;
+            padding-bottom: 0px;
+
+          }
+
+          
+          #calculate {
+              background-color: #41BA56;
+              width: 101%;
+              padding: 2px;
+              font-size: 40px;
+              color: white;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              border: none;
+          }
+
+          #output {
+              margin-top: 20px;
+              font-size: 70px;
+              font-weight: bold;
+              text-align: center;
+              color: #005DC3;
+              background-color: white;
+              padding-top: 45px;
+
+          }
+
+          #output-details { 
+
+            text-align: center;
+            color: #005DC3;
+            padding-top: 5px;
+
+            }
+
+        </style>
+
+        <!-- Inputs -->
+        
+        <div id="Total-tips">
+          TOTAL TIPS
+        </div>
+
+        <hr id="cell-divider1">
+
+        <div id=tips-input>
+          <input type="number" id="tip-count" value="100">
+        </div>
+
+        <hr id="cell-divider2">
+
+        <div id="Total-bussers">
+          # OF BUSSERS
+        </div>
+
+        <hr id="cell-divider3">
+
+        <div id=bussers-input>
+          <input type="number" id="busser-count" value="2">
+        </div>
+
+        <hr id="cell-divider4">
+
+        <div id="Total-cooks">
+          # OF COOKS
+        </div>
+
+        <hr id="cell-divider5">
+
+        <div id=cooks-input>
+        <input type="number" id="cook-count" value="3">
+        </div>        
+        
+        <hr id="cell-divider6">
+
+        <div id="Spacing">
+        </div>
+
+        <button id="calculate" onClick="calculateTipTotal()">Calculate</button>
+          
+
+        <!-- Output -->
+        <div id="output">
+            ? dollars
+        </div>
+        <div id="output-details">
+          Maximum tips remaining
+        </div>
+
+        <script>
+
+          function calculateTipTotal() {
+            
+            tips = document.getElementById('tip-count').value 
+            bussers = document.getElementById('busser-count').value * .02 * tips
+            cooks = document.getElementById('cook-count').value * .05 * tips
+            result = tips - bussers - cooks
+
+            result = '$' + result
+
+            document.getElementById('output').innerHTML = result
+
+          }
+
+        </script>
+
+        <!-- Tab Bar -->
+      </div>
+    </div>
+  </body>
+</html>
